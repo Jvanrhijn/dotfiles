@@ -10,4 +10,4 @@ python gentermcolors.py ~/.Xdefaults colors outf
 
 mv outf ~/.Xdefaults
 
-#rm colors colors.png
+rm colors colors.png
