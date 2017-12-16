@@ -1,0 +1,13 @@
+#!/bin/bash
+
+args=("$@")
+
+#./schemer2 -format img::img -in ${args[0]} -out colors.png
+./schemer2 -format img::urxvt -in ${args[0]} -out colors
+
+feh --bg-fill ${args[0]}
+python gentermcolors.py ~/.Xdefaults colors outf
+
+mv outf ~/.Xdefaults
+
+#rm colors colors.png
