@@ -35,12 +35,13 @@
 
 
 
-"xbacklight -inc 5"
+#Increase brightness
+"light -pA 5"
     m:0x0 + c:233
     XF86MonBrightnessUp 
 
 #Decrease brightness
-"xbacklight -dec 5"
+"light -pU 5"
     m:0x0 + c:232
     XF86MonBrightnessDown 
 
