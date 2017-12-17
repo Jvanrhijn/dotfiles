@@ -168,8 +168,7 @@ exec xrandr --dpi 100
 exec --no-startup-id dropbox &
 exec --no-startup-id polybar example &
 exec --no-startup-id albert & 
-exec xrbd -merge ~/.Xresources
 exec --no-startup-id nm-applet & 
 exec /usr/bin/compton --config ~/.config/compton/compton.conf -b
 exec xbindkeys
-exec .config/i3/termbgcolors ~/Dropbox/Wallpapers/*wallpapersden*
+exec .config/i3/termbgcolors ~/Dropbox/Wallpapers/frozen.jpg

@@ -13,7 +13,7 @@ background = #000000
 background-alt = #444
 ;foreground = ${xrdb:color7:#222}
 foreground = #d0d0d0
-foreground-alt = #555
+foreground-alt = #d0d0d0
 primary = #ffb52a
 secondary = #e60053
 alert = #bd2c40
@@ -47,13 +47,13 @@ padding-right = 2
 module-margin-left = 2
 module-margin-right = 2
 
-font-0 = FontAwesome:pixelsize=14;1
+font-2 = FontAwesome:pixelsize=12;1
 font-1 = unifont:fontformat=truetype:size=8:antialias=false;0
-font-2 = Monaco Sans:pixelsize=10;1
+font-0 = Monaco Sans:pixelsize=10;1
 
 modules-left = i3
 modules-center = 
-modules-right = xbacklight volume xkeyboard memory cpu wlan battery temperature time date
+modules-right = xbacklight volume memory cpu xkeyboard wlan battery temperature time date
 
 tray-position = none
 tray-padding = 2
@@ -254,20 +254,21 @@ interval = 5
 time = %H:%M
 time-alt = %H:%M:%S
 
-format-prefix = 
+format-prefix = 
 format-prefix-foreground = ${colors.foreground-alt}
 format-underline = #0a6cf5
 
-label = " %time%"
+label = " %time%"
 
 [module/date]
 type = internal/date
 interval = 5
 
 date = %Y-%m-%d
-format-underline = #031ce1
+format-prefix = 
+format-underline = #f90000
 
-label = " %date%
+label = " %date%"
 
 [module/volume]
 type = internal/volume
@@ -302,6 +303,11 @@ type = internal/battery
 battery = BAT0
 adapter = AC
 full-at = 98
+poll-interval = 1
+
+time-format = %H:%M
+label-discharging = "%percentage%% %time%"
+label-charging = "%percentage%% %time%"
 
 format-charging = <animation-charging> <label-charging>
 format-charging-underline = #ffb52a

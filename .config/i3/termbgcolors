@@ -9,5 +9,6 @@ feh --bg-fill ${args[0]}
 python gentermcolors.py ~/.Xdefaults colors outf
 
 mv outf ~/.Xdefaults
+cp ~/.Xdefaults ~/.Xresources
 
-rm colors colors.png
+rm colors
