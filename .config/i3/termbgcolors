@@ -2,13 +2,13 @@
 
 args=("$@")
 
-#./schemer2 -format img::img -in ${args[0]} -out colors.png
+cd "$(dirname "$(find / -type f -name termbgcolors 2> /dev/null)")"
+
 ./schemer2 -format img::urxvt -in ${args[0]} -out colors
 
-feh --bg-fill ${args[0]}
+feh --bg-fill ${args[0]} >> log
 python gentermcolors.py ~/.Xdefaults colors outf
 
-mv outf ~/.Xdefaults
-cp ~/.Xdefaults ~/.Xresources
+mv outf $HOME/.Xdefaults
 
-rm colors
+rm ./colors
