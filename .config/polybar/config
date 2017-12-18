@@ -51,8 +51,8 @@ font-2 = FontAwesome:pixelsize=12;1
 font-1 = unifont:fontformat=truetype:size=8:antialias=false;0
 font-0 = Monaco Sans:pixelsize=10;1
 
-modules-left = i3
-modules-center = 
+modules-left = i3 spotify
+modules-center = mpd
 modules-right = backlight-acpi volume memory cpu xkeyboard wlan battery temperature time date
 
 tray-position = none
@@ -348,6 +348,15 @@ ramp-0 = 
 ramp-1 = 
 ramp-2 = 
 ramp-foreground = ${colors.foreground-alt}
+
+[module/spotify]
+type = custom/script
+interval = 1
+format-prefix = " "
+format = <label>
+exec = ~/.config/polybar/spotify
+
+format-underline = #1db954
 
 [module/powermenu]
 type = custom/menu
