@@ -51,9 +51,9 @@ font-2 = FontAwesome:pixelsize=12;1
 font-1 = unifont:fontformat=truetype:size=8:antialias=false;0
 font-0 = Monaco Sans:pixelsize=10;1
 
-modules-left = i3 spotify
+modules-left = i3 gmail spotify
 modules-center = mpd
-modules-right = backlight-acpi volume memory cpu xkeyboard wlan battery temperature time date
+modules-right = backlight-acpi volume cpu memory xkeyboard wlan battery temperature time date powermenu
 
 tray-position = none
 tray-padding = 2
@@ -358,6 +358,13 @@ exec = ~/.config/polybar/spotify
 
 format-underline = #1db954
 
+[module/gmail]
+type = custom/script
+interval = 300
+exec = ~/.config/polybar/gmail/launch.py --prefix '' --color '#be5046' --nosound
+tail = true
+click-left = xdg-open https://mail.google.com
+
 [module/powermenu]
 type = custom/menu
 
@@ -365,7 +372,7 @@ expand-right = true
 
 format-spacing = 1
 
-label-open = 
+label-open = 
 label-open-foreground = ${colors.secondary}
 label-close =  cancel
 label-close-foreground = ${colors.secondary}
@@ -380,10 +387,10 @@ menu-0-1-exec = menu-open-2
 menu-1-0 = cancel
 menu-1-0-exec = menu-open-0
 menu-1-1 = reboot
-menu-1-1-exec = sudo reboot
+menu-1-1-exec = reboot
 
 menu-2-0 = power off
-menu-2-0-exec = sudo poweroff
+menu-2-0-exec = poweroff
 menu-2-1 = cancel
 menu-2-1-exec = menu-open-0
 
