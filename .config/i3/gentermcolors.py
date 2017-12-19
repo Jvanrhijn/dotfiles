@@ -39,7 +39,7 @@ def main():
     output = open(sys.argv[3], "w")
 
     colors = getColorsFromFile(colorfile)
-    colorsb = [brightenColor(color, 1.5) for color in colors] 
+    colorsb = [brightenColor(color, 1.35) for color in colors] 
     
     replaceColors(Xdefaults, output, colorsb)
 

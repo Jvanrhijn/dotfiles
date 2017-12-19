@@ -157,7 +157,7 @@ bindsym $mod+r mode "resize"
 #
 # Window Gaps and borders
 gaps outer 0
-gaps inner 10
+gaps inner 15
 for_window [class="^.*"] border pixel 0
 
 # Terminal window borders
@@ -170,4 +170,4 @@ exec --no-startup-id albert &
 exec --no-startup-id nm-applet & 
 exec /usr/bin/compton --config ~/.config/compton/compton.conf -b -c --opengl
 exec xbindkeys
-exec ~/.config/i3/termbgcolors ~/Dropbox/Wallpapers/plane.png
+exec ~/.config/i3/termbgcolors ~/Dropbox/Wallpapers/tombraider.jpg
