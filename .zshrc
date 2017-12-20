@@ -13,8 +13,9 @@ autoload -Uz compinit
 compinit
 # End of lines added by compinstall
 
-alias ls='ls --color=auto'
+alias ls='ls --color=auto -C'
 alias config='git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
+alias nvidia='optirun nvidia-settings -c :8'
 
 
 # prompt 
