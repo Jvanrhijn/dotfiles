@@ -1,0 +1,6 @@
+[settings]
+file = ~/todo.txt
+archive = ~/done.txt
+auto-save = True
+show-toolbar = True
+enable-borders = True
