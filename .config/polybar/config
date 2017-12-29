@@ -19,11 +19,8 @@ secondary = #e60053
 alert = #bd2c40
 
 [bar/laptop]
-;monitor = ${env:MONITOR:HDMI-1}
 width = 100%
 height = 25
-;offset-x = 1%
-;offset-y = 1%
 radius = 0
 fixed-center = false
 bottom = true
@@ -40,16 +37,15 @@ border-right-size = 0
 border-size = 0
 border-color = #00000000
 
-
 padding-left = 0
 padding-right = 2
 
 module-margin-left = 2
 module-margin-right = 2
 
-font-2 = Font Awesome 5 Free:pixelsize=12;1
-font-1 = unifont:fontformat=truetype:size=8:antialias=false;0
 font-0 = Monaco Sans:pixelsize=10;1
+font-1 = unifont:fontformat=truetype:size=8:antialias=false;0
+font-2 = Icons:pixelsize=12;1
 
 modules-left = i3 gmail spotify
 modules-center = mpd
@@ -103,7 +99,7 @@ padding-right = 2
 module-margin-left = 2
 module-margin-right = 2
 
-font-2 = Font Awesome 5 Free:pixelsize=12;1
+font-2 = Icons:pixelsize=12;1
 font-1 = unifont:fontformat=truetype:size=8:antialias=false;0
 font-0 = Monaco Sans:pixelsize=10;1
 
@@ -408,7 +404,7 @@ ramp-foreground = ${colors.foreground-alt}
 [module/spotify]
 type = custom/script
 interval = 1
-format-prefix = ""
+format-prefix = " "
 format = <label>
 exec = ~/.config/polybar/spotify
 
