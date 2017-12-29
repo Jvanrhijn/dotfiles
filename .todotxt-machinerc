@@ -1,6 +1,6 @@
 [settings]
-file = ~/todo.txt
-archive = ~/done.txt
+file = ~/Dropbox/todo.txt
+archive = ~/Dropbox/done.txt
 auto-save = True
 show-toolbar = True
 enable-borders = True
