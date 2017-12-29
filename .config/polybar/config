@@ -73,7 +73,7 @@ cursor-scroll = ns-resize
 [bar/desktop]
 ;monitor = ${env:MONITOR:HDMI-1}
 width = 100%
-height = 25
+height = 20
 ;offset-x = 1%
 ;offset-y = 1%
 radius = 0
@@ -99,9 +99,9 @@ padding-right = 2
 module-margin-left = 2
 module-margin-right = 2
 
-font-2 = Icons:pixelsize=12;1
+font-2 = Icons:pixelsize=11;1
 font-1 = unifont:fontformat=truetype:size=8:antialias=false;0
-font-0 = Monaco Sans:pixelsize=10;1
+font-0 = Monaco Sans:pixelsize=9;1
 
 modules-left = i3 gmail spotify
 modules-center = mpd
