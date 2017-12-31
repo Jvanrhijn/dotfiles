@@ -18,14 +18,14 @@ alias la='ls -a'
 alias config='git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 alias nvidia='optirun nvidia-settings -c :8'
 alias todo='todotxt-machine'
-alias here='$(ps -p $(ps -p $$ -o ppid=) o args=) -cd $PWD & disown'
+alias here='urxvt -cd $PWD & disown'
 alias myip='curl http://ipecho.net/plain; echo'
 
 # prompt 
 PROMPT="[%n@%m %d]%(!.#.$) "
 
 # import color scheme from wal
-(wal -r &)
+(cat ~/.cache/wal/sequences &)
 
 # merge .Xresources
 xrdb -merge ~/.Xresources
