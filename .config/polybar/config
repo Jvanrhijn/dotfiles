@@ -8,8 +8,8 @@
 ;=====================================================
 
 [colors]
-;background = ${xrdb:color0:#222}
-background = #000000
+background = ${xrdb:color0:#222}
+;background = #000000
 background-alt = #444
 ;foreground = ${xrdb:color7:#222}
 foreground = #d0d0d0
@@ -105,7 +105,7 @@ font-0 = Monaco Sans:pixelsize=9;1
 
 modules-left = i3 gmail spotify
 modules-center = mpd
-modules-right = cpu memory xkeyboard time date
+modules-right = cpu memory xkeyboard time date powermenu
 
 tray-position = none
 tray-padding = 2
