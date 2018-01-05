@@ -39,3 +39,6 @@ PATH=$PATH:$HOME/opt/gcc-arm-none-eabi-6-2017-q2-update/bin
 # source
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
+# pure prompt
+autoload -U promptinit; promptinit
+prompt pure
