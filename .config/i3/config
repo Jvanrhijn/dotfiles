@@ -165,8 +165,7 @@ for_window [class="URxvt"] border pixel 0
 
 exec xrandr --dpi 100
 exec --no-startup-id dropbox &
-exec --no-startup-id polybar laptop &
-exec --no-startup-id albert & 
-exec --no-startup-id nm-applet & 
+exec --no-startup-id polybar desktop &
+exec pulseaudio --daemonize
 exec /usr/bin/compton --config ~/.config/compton/compton.conf -b -c --opengl
 exec xbindkeys
