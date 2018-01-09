@@ -166,7 +166,6 @@ for_window [class="URxvt"] border pixel 0
 exec xrandr --dpi 100
 exec /usr/bin/compton --config ~/.config/compton/compton.conf -b -c --opengl
 exec --no-startup-id dropbox &
-exec --no-startup-id albert & disown
 exec pulseaudio --daemonize
 exec --no-startup-id polybar desktop &
 exec xbindkeys
