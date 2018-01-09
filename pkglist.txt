@@ -21,3 +21,4 @@ albert
 networkmanager
 network-manager-applet
 zsh-pure-prompt
+rofi
