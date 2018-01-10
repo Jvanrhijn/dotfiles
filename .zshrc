@@ -27,9 +27,6 @@ PROMPT="[%n@%m %d]%(!.#.$) "
 # import color scheme from wal
 (cat ~/.cache/wal/sequences &)
 
-# merge .Xresources
-xrdb -merge ~/.Xresources
-
 # fuck
 eval $(thefuck --alias)
 
