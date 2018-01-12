@@ -9,7 +9,7 @@
 
 [colors]
 background = ${xrdb:color0:#222}
-background-alt = #444
+background-alt = ${xrdb:color0:#222}
 ;foreground = ${xrdb:color7:#222}
 foreground = #d0d0d0
 foreground-alt = #d0d0d0
@@ -47,7 +47,7 @@ font-1 = unifont:fontformat=truetype:size=8:antialias=false;0
 font-2 = Icons:pixelsize=12;1
 
 modules-left = i3 gmail spotify
-modules-center = mpd
+modules-center = none
 modules-right = backlight-acpi volume cpu memory xkeyboard wlan battery temperature time date powermenu
 
 tray-position = none
@@ -103,7 +103,7 @@ font-1 = unifont:fontformat=truetype:size=8:antialias=false;0
 font-0 = Monaco Sans:pixelsize=9;1
 
 modules-left = i3 gmail spotify
-modules-center = mpd
+modules-center = none
 modules-right = cpu memory xkeyboard time date powermenu
 
 tray-position = none
