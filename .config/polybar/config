@@ -10,7 +10,7 @@
 [colors]
 background = ${xrdb:color0:#222}
 ;background = #000000
-background-alt = ${xrdb:color8:#222}
+background-alt = ${xrdb:color0:#222}
 ;foreground = ${xrdb:color7:#222}
 foreground = #d0d0d0
 foreground-alt = #d0d0d0
