@@ -17,58 +17,6 @@ primary = #ffb52a
 secondary = #e60053
 alert = #bd2c40
 
-[bar/laptop]
-width = 100%
-height = 25
-radius = 0
-fixed-center = false
-bottom = true
-
-background = ${colors.background}
-foreground = ${colors.foreground}
-
-line-size = 3
-line-color = #f00
-
-border-bottom-size = 0
-border-left-size = 0
-border-right-size = 0
-border-size = 0
-border-color = #00000000
-
-padding-left = 0
-padding-right = 2
-
-module-margin-left = 2
-module-margin-right = 2
-
-font-0 = Monaco Sans:pixelsize=10;1
-font-1 = unifont:fontformat=truetype:size=8:antialias=false;0
-font-2 = Icons:pixelsize=12;1
-
-modules-left = i3 gmail spotify
-modules-center = none
-modules-right = backlight-acpi volume cpu memory xkeyboard wlan battery temperature time date powermenu
-
-tray-position = none
-tray-padding = 2
-;tray-transparent = true
-;tray-background = #0063ff
-
-;wm-restack = bspwm
-;wm-restack = i3
-
-;override-redirect = true
-
-;scroll-up = bspwm-desknext
-;scroll-down = bspwm-deskprev
-
-;scroll-up = i3wm-wsnext
-;scroll-down = i3wm-wsprev
-
-cursor-click = pointer
-cursor-scroll = ns-resize
-
 [bar/desktop]
 ;monitor = ${env:MONITOR:HDMI-1}
 width = 100%
@@ -98,7 +46,8 @@ padding-right = 2
 module-margin-left = 2
 module-margin-right = 2
 
-font-2 = Icons:pixelsize=11;1
+font-3 = Noto Sans Symbols2:pixelsize=11;1
+font-2 = FuraMono Nerd Font Mono:pixelsize=16;1
 font-1 = unifont:fontformat=truetype:size=8:antialias=false;0
 font-0 = Monaco Sans:pixelsize=9;1
 
@@ -133,7 +82,7 @@ label = %title:0:30:...%
 type = internal/xkeyboard
 blacklist-0 = num lock
 
-format-prefix = " "
+format-prefix = " "
 format-prefix-foreground = ${colors.foreground-alt}
 format-prefix-underline = ${xrdb:color8}
 
@@ -188,25 +137,36 @@ label-mode-foreground = #000
 label-mode-background = ${colors.primary}
 
 ; focused = Active workspace on focused monitor
-label-focused = %index%
+label-focused = %icon%
 label-focused-background = ${module/bspwm.label-focused-background}
 label-focused-underline = ${module/bspwm.label-focused-underline}
 label-focused-padding = ${module/bspwm.label-focused-padding}
 
 ; unfocused = Inactive workspace on any monitor
-label-unfocused = %index%
+label-unfocused = %icon%
 label-unfocused-padding = ${module/bspwm.label-occupied-padding}
 
 ; visible = Active workspace on unfocused monitor
-label-visible = %index%
+label-visible = %icon%
 label-visible-background = ${self.label-focused-background}
 label-visible-underline = ${self.label-focused-underline}
 label-visible-padding = ${self.label-focused-padding}
 
 ; urgent = Workspace with urgency hint set
-label-urgent = %index%
+label-urgent = %icon%
 label-urgent-background = ${module/bspwm.label-urgent-background}
 label-urgent-padding = ${module/bspwm.label-urgent-padding}
+
+ws-icon-0 = 1;
+ws-icon-1 = 2;
+ws-icon-2 = 3;3
+ws-icon-3 = 4;4
+ws-icon-4 = 5;5
+ws-icon-5 = 6;6
+ws-icon-6 = 7;7
+ws-icon-7 = 8;8
+ws-icon-8 = 9;
+ws-icon-9 = 10;🎜
 
 [module/mpd]
 type = internal/mpd
@@ -254,7 +214,8 @@ label = %percentage:2%%
 [module/memory]
 type = internal/memory
 interval = 2
-format-prefix = "M																																								 "
+format-prefix = " "
+
 format-prefix-foreground = ${colors.foreground-alt}
 format-underline = ${xrdb:color3}
 label = %percentage_used%%
@@ -305,7 +266,7 @@ interval = 5
 time = %H:%M
 time-alt = %H:%M:%S
 
-format-prefix = 
+format-prefix = 
 format-prefix-foreground = ${colors.foreground-alt}
 format-underline = ${xrdb:color5}
 
@@ -402,7 +363,7 @@ ramp-foreground = ${colors.foreground-alt}
 [module/spotify]
 type = custom/script
 interval = 1
-format-prefix = " "
+format-prefix = " "
 format = <label>
 exec = ~/.config/polybar/spotify
 
@@ -411,7 +372,7 @@ format-underline = #1db954
 [module/gmail]
 type = custom/script
 interval = 300
-exec = ~/.config/polybar/gmail/launch.py --prefix '' --color '#be5046' --nosound
+exec = ~/.config/polybar/gmail/launch.py --prefix '' --color '#be5046' --nosound
 tail = true
 click-left = xdg-open https://mail.google.com
 
