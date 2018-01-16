@@ -169,7 +169,7 @@ bindsym $mod+r mode "resize"
 #
 # Window Gaps and borders
 gaps outer 0
-gaps inner 15
+gaps inner 8
 for_window [class="^.*"] border pixel 0
 
 # Terminal window borders
