@@ -20,7 +20,7 @@ alert = #bd2c40
 
 [bar/laptop]
 width = 100%
-height = 25
+height = 35
 radius = 0
 fixed-center = false
 bottom = true
@@ -45,67 +45,12 @@ module-margin-right = 2
 
 font-0 = Monaco Sans:pixelsize=10;1
 font-1 = unifont:fontformat=truetype:size=8:antialias=false;0
-font-2 = Icons:pixelsize=12;1
+font-2 = FuraMono Nerd Font Mono:pixelsize=18;1
+font-3 = Noto Sans Symbols2:pixelsize=11;1
 
 modules-left = i3 gmail spotify
 modules-center = mpd
 modules-right = backlight-acpi volume cpu memory xkeyboard wlan battery temperature time date powermenu
-
-tray-position = none
-tray-padding = 2
-;tray-transparent = true
-;tray-background = #0063ff
-
-;wm-restack = bspwm
-;wm-restack = i3
-
-;override-redirect = true
-
-;scroll-up = bspwm-desknext
-;scroll-down = bspwm-deskprev
-
-;scroll-up = i3wm-wsnext
-;scroll-down = i3wm-wsprev
-
-cursor-click = pointer
-cursor-scroll = ns-resize
-
-[bar/desktop]
-;monitor = ${env:MONITOR:HDMI-1}
-width = 100%
-height = 25
-;offset-x = 1%
-;offset-y = 1%
-radius = 0
-fixed-center = false
-bottom = true
-
-background = ${colors.background}
-foreground = ${colors.foreground}
-
-line-size = 3
-line-color = #f00
-
-border-bottom-size = 0
-border-left-size = 0
-border-right-size = 0
-border-size = 0
-border-color = #00000000
-
-
-padding-left = 0
-padding-right = 2
-
-module-margin-left = 2
-module-margin-right = 2
-
-font-2 = Icons:pixelsize=11;1
-font-1 = unifont:fontformat=truetype:size=8:antialias=false;0
-font-0 = Monaco Sans:pixelsize=9;1
-
-modules-left = i3 gmail spotify
-modules-center = mpd
-modules-right = cpu memory xkeyboard time date powermenu
 
 tray-position = none
 tray-padding = 2
@@ -189,25 +134,36 @@ label-mode-foreground = #000
 label-mode-background = ${colors.primary}
 
 ; focused = Active workspace on focused monitor
-label-focused = %index%
+label-focused = %icon%
 label-focused-background = ${module/bspwm.label-focused-background}
 label-focused-underline = ${module/bspwm.label-focused-underline}
 label-focused-padding = ${module/bspwm.label-focused-padding}
 
 ; unfocused = Inactive workspace on any monitor
-label-unfocused = %index%
+label-unfocused = %icon%
 label-unfocused-padding = ${module/bspwm.label-occupied-padding}
 
 ; visible = Active workspace on unfocused monitor
-label-visible = %index%
+label-visible = %icon%
 label-visible-background = ${self.label-focused-background}
 label-visible-underline = ${self.label-focused-underline}
 label-visible-padding = ${self.label-focused-padding}
 
 ; urgent = Workspace with urgency hint set
-label-urgent = %index%
+label-urgent = %icon%
 label-urgent-background = ${module/bspwm.label-urgent-background}
 label-urgent-padding = ${module/bspwm.label-urgent-padding}
+
+ws-icon-0 = 1;
+ws-icon-1 = 2;
+ws-icon-2 = 3;
+ws-icon-3 = 4;4
+ws-icon-4 = 5;5
+ws-icon-5 = 6;6
+ws-icon-6 = 7;7
+ws-icon-7 = 8;8
+ws-icon-8 = 9;
+ws-icon-9 = 10;🎜
 
 [module/mpd]
 type = internal/mpd
@@ -247,7 +203,7 @@ card = intel_backlight
 [module/cpu]
 type = internal/cpu
 interval = 2
-format-prefix = "CPU "
+format-prefix = " "
 format-prefix-foreground = ${colors.foreground-alt}
 format-underline = ${xrdb:color2}
 label = %percentage:2%%
@@ -255,7 +211,8 @@ label = %percentage:2%%
 [module/memory]
 type = internal/memory
 interval = 2
-format-prefix = "M																																								 "
+format-prefix = " "
+
 format-prefix-foreground = ${colors.foreground-alt}
 format-underline = ${xrdb:color3}
 label = %percentage_used%%
@@ -306,7 +263,7 @@ interval = 5
 time = %H:%M
 time-alt = %H:%M:%S
 
-format-prefix = 
+format-prefix = 
 format-prefix-foreground = ${colors.foreground-alt}
 format-underline = ${xrdb:color5}
 
@@ -367,19 +324,22 @@ format-charging-underline = ${xrdb:color7}
 format-discharging = <ramp-capacity> <label-discharging>
 format-discharging-underline = ${self.format-charging-underline}
 
-format-full-prefix = " "
+format-full-prefix = " "
 format-full-prefix-foreground = ${colors.foreground-alt}
 format-full-underline = ${self.format-charging-underline}
 
-ramp-capacity-0 = 
-ramp-capacity-1 = 
-ramp-capacity-2 = 
-ramp-capacity-3 = 
+ramp-capacity-0 = 
+ramp-capacity-1 = 
+ramp-capacity-2 = 
+ramp-capacity-3 = 
+ramp-capacity-4 = 
 ramp-capacity-foreground = ${colors.foreground-alt}
 
-animation-charging-0 = 
-animation-charging-1 = 
-animation-charging-2 = 
+animation-charging-0 = 
+animation-charging-1 = 
+animation-charging-2 = 
+animation-charging-3 = 
+animation-charging-4 = 
 animation-charging-foreground = ${colors.foreground-alt}
 animation-charging-framerate = 750
 
@@ -397,13 +357,17 @@ label = %temperature%
 label-warn = %temperature%
 label-warn-foreground = ${colors.secondary}
 
-ramp-0 = 
+ramp-0 = 
+ramp-1 = 
+ramp-2 = 
+ramp-3 = 
+ramp-4 = 
 ramp-foreground = ${colors.foreground-alt}
 
 [module/spotify]
 type = custom/script
 interval = 1
-format-prefix = " "
+format-prefix = " "
 format = <label>
 exec = ~/.config/polybar/spotify
 
@@ -412,7 +376,7 @@ format-underline = #1db954
 [module/gmail]
 type = custom/script
 interval = 300
-exec = ~/.config/polybar/gmail/launch.py --prefix '' --color '#be5046' --nosound
+exec = ~/.config/polybar/gmail/launch.py --prefix '' --color '#be5046' --nosound
 tail = true
 click-left = xdg-open https://mail.google.com
 
@@ -455,5 +419,3 @@ screenchange-reload = true
 [global/wm]
 margin-top = 5
 margin-bottom = 5
-
-; vim:ft=dosini
