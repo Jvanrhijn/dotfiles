@@ -54,7 +54,7 @@ font-0 = Monaco Sans:pixelsize=9;1
 
 modules-left = i3 gmail spotify
 modules-center = none
-modules-right = weather cpu memory xkeyboard time date powermenu
+modules-right = dropbox weather cpu memory xkeyboard time date powermenu
 
 tray-position = none
 tray-padding = 2
@@ -384,6 +384,13 @@ exec = $HOME/.config/polybar/weather.sh
 label-font = 5
 
 format-underline = ${xrdb:color9}
+
+[module/dropbox]
+type = custom/script
+interval = 5
+exec = $HOME/.config/polybar/dropbox.sh
+
+format-underline = #3d9ae8
 
 [module/powermenu]
 type = custom/menu
