@@ -50,7 +50,7 @@ font-3 = Noto Sans Symbols2:pixelsize=11;1
 
 modules-left = i3 gmail spotify
 modules-center = mpd
-modules-right = backlight-acpi volume cpu memory xkeyboard wlan battery temperature time date powermenu
+modules-right = backlight-acpi volume bbswitch cpu memory xkeyboard wlan battery temperature time date powermenu
 
 tray-position = none
 tray-padding = 2
@@ -379,6 +379,13 @@ interval = 300
 exec = ~/.config/polybar/gmail/launch.py --prefix '' --color '#be5046' --nosound
 tail = true
 click-left = xdg-open https://mail.google.com
+
+[module/bbswitch]
+type = custom/script
+exec = $HOME/.config/polybar/bbswitch.sh
+interval = 5
+click-left = "optirun -b none nvidia-settings -c :8"
+format-underline = ${xrdb:color9}
 
 [module/powermenu]
 type = custom/menu
