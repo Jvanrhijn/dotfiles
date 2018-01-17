@@ -46,6 +46,7 @@ padding-right = 2
 module-margin-left = 2
 module-margin-right = 2
 
+font-4 = Weather Icons:pixelsize=10;1
 font-3 = Noto Sans Symbols2:pixelsize=11;1
 font-2 = FuraMono Nerd Font Mono:pixelsize=16;1
 font-1 = unifont:fontformat=truetype:size=8:antialias=false;0
@@ -53,7 +54,7 @@ font-0 = Monaco Sans:pixelsize=9;1
 
 modules-left = i3 gmail spotify
 modules-center = none
-modules-right = cpu memory xkeyboard time date powermenu
+modules-right = weather cpu memory xkeyboard time date powermenu
 
 tray-position = none
 tray-padding = 2
@@ -375,6 +376,14 @@ interval = 300
 exec = ~/.config/polybar/gmail/launch.py --prefix '' --color '#be5046' --nosound
 tail = true
 click-left = xdg-open https://mail.google.com
+
+[module/weather]
+type = custom/script
+interval = 600
+exec = $HOME/.config/polybar/weather.sh
+label-font = 5
+
+format-underline = ${xrdb:color9}
 
 [module/powermenu]
 type = custom/menu
