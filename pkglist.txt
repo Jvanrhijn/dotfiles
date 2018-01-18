@@ -21,3 +21,6 @@ networkmanager
 network-manager-applet
 zsh-pure-prompt
 rofi
+mpc
+ncmpcpp
+tmux

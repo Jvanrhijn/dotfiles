@@ -1,6 +1,9 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =4
+let g:netrw_dirhist_cnt =7
 let g:netrw_dirhist_1='/home/jesse/.config/gtk-3.0'
 let g:netrw_dirhist_2='/home/jesse/.config/gtk-2.0'
 let g:netrw_dirhist_3='/usr/share/gtk-2.0'
 let g:netrw_dirhist_4='/home/jesse/.config/gtk-3.0'
+let g:netrw_dirhist_5='/boot/loader/entries'
+let g:netrw_dirhist_6='/home/jesse/Git/sos/cancontrol'
+let g:netrw_dirhist_7='/home/jesse/Git/advantech-test'

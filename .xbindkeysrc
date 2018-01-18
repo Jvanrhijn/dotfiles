@@ -37,8 +37,8 @@
 
 #Increase brightness
 "light -A 5"
-    m:0x0 + c:233
-    XF86MonBrightnessUp 
+    m:0x10 + c:233
+    Mod2 + XF86MonBrightnessUp 
 
 #Decrease brightness
 "light -U 5"
@@ -68,6 +68,11 @@
 "rofi -show run -i"
     m:0x8 + c:53
     Alt + x 
+
+#Lock
+"slimlock"
+    m:0x50 + c:46
+    Mod2+Mod4 + l 
 
 #
 # End of xbindkeys configuration

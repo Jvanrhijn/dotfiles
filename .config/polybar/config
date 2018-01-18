@@ -48,8 +48,8 @@ font-1 = unifont:fontformat=truetype:size=8:antialias=false;0
 font-2 = FuraMono Nerd Font Mono:pixelsize=18;1
 font-3 = Noto Sans Symbols2:pixelsize=11;1
 
-modules-left = i3 gmail spotify
-modules-center = mpd
+modules-left = i3 gmail mpd
+modules-center = 
 modules-right = backlight-acpi volume bbswitch cpu memory xkeyboard wlan battery temperature time date powermenu
 
 tray-position = none
@@ -169,11 +169,11 @@ ws-icon-9 = 10;🎜
 type = internal/mpd
 format-online = <label-song>  <icon-prev> <icon-stop> <toggle> <icon-next>
 
-icon-prev = 
-icon-stop = 
-icon-play = 
-icon-pause = 
-icon-next = 
+icon-prev = 
+icon-stop = 
+icon-play = 
+icon-pause = 
+icon-next = 
 
 label-song-maxlen = 25
 label-song-ellipsis = true

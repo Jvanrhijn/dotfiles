@@ -20,6 +20,7 @@ alias nvidia='optirun nvidia-settings -c :8'
 alias todo='todotxt-machine'
 alias here='urxvt -cd $PWD & disown'
 alias myip='curl http://ipecho.net/plain; echo'
+alias music='tmux source-file $HOME/.config/tmux/music'
 
 # prompt 
 PROMPT="[%n@%m %d]%(!.#.$) "
