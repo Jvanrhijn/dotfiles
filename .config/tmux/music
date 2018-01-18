@@ -1,0 +1,7 @@
+new
+neww 'ncmpcpp'
+splitw -fh 'ncmpcpp'
+send-keys 1
+send-keys l
+last-pane
+splitw -fvd 'cava'

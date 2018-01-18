@@ -20,6 +20,8 @@ alias nvidia='optirun nvidia-settings -c :8'
 alias todo='todotxt-machine'
 alias here='urxvt -cd $PWD & disown'
 alias myip='curl http://ipecho.net/plain; echo'
+alias lyrics='spotify-lyric'
+alias music='tmux source-file $HOME/.config/tmux/music'
 
 # prompt 
 PROMPT="[%n@%m %d]%(!.#.$) "
@@ -34,7 +36,7 @@ xrdb -merge ~/.Xresources
 eval $(thefuck --alias)
 
 # PATH
-PATH=$PATH:$HOME/opt/gcc-arm-none-eabi-6-2017-q2-update/bin
+PATH=$PATH:$HOME/opt/gcc-arm-none-eabi-7-2017-q4-major/bin
 
 # source
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh

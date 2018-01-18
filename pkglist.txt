@@ -21,3 +21,5 @@ networkmanager
 network-manager-applet
 zsh-pure-prompt
 rofi
+nerd-fonts-complete
+tmux
