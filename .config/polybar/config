@@ -20,7 +20,7 @@ alert = #bd2c40
 
 [bar/laptop]
 width = 100%
-height = 35
+height = 25
 radius = 0
 fixed-center = false
 bottom = true
@@ -48,9 +48,9 @@ font-1 = unifont:fontformat=truetype:size=8:antialias=false;0
 font-2 = FuraMono Nerd Font Mono:pixelsize=18;1
 font-3 = Noto Sans Symbols2:pixelsize=11;1
 
-modules-left = i3 gmail mpd
+modules-left = i3 dropbox gmail mpd
 modules-center = 
-modules-right = backlight-acpi volume bbswitch cpu memory xkeyboard wlan battery temperature time date powermenu
+modules-right = backlight-acpi volume bbswitch cpu memory wlan battery time date powermenu
 
 tray-position = none
 tray-padding = 2
@@ -222,9 +222,12 @@ type = internal/network
 interface = wlp4s0
 interval = 3.0
 
-format-connected = <ramp-signal> <label-connected>
+format-connected = <label-connected>
 format-connected-underline = ${xrdb:color3}
-label-connected = %essid%
+;label-connected = %essid%
+label-connected = 
+
+click-left = exec nm-connection-editor
 
 format-disconnected =
 ;format-disconnected = <label-disconnected>
@@ -379,6 +382,12 @@ interval = 300
 exec = ~/.config/polybar/gmail/launch.py --prefix '' --color '#be5046' --nosound
 tail = true
 click-left = xdg-open https://mail.google.com
+
+[module/dropbox]
+type = custom/script
+interval = 5
+exec = $HOME/.config/polybar/dropbox.sh
+click-left = nemo $HOME/Dropbox & disown
 
 [module/bbswitch]
 type = custom/script
