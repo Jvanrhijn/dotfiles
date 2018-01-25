@@ -36,7 +36,7 @@ xrdb -merge ~/.Xresources
 eval $(thefuck --alias)
 
 # PATH
-PATH=$PATH:$HOME/opt/gcc-arm-none-eabi-7-2017-q4-major/bin
+PATH=$PATH:$HOME/.local/bin:$HOME/opt/gcc-arm-none-eabi-7-2017-q4-major/bin
 
 # source
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
