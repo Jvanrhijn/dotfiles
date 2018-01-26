@@ -52,7 +52,7 @@ font-2 = FuraMono Nerd Font Mono:pixelsize=16;1
 font-1 = unifont:fontformat=truetype:size=8:antialias=false;0
 font-0 = Monaco Sans:pixelsize=9;1
 
-modules-left = i3 dropbox gmail spotify
+modules-left = i3 steam dropbox gmail mpd
 modules-center = none
 modules-right = weather cpu memory xkeyboard time date powermenu
 
@@ -173,11 +173,11 @@ ws-icon-9 = 10;🎜
 type = internal/mpd
 format-online = <label-song>  <icon-prev> <icon-stop> <toggle> <icon-next>
 
-icon-prev = 
-icon-stop = 
-icon-play = 
-icon-pause = 
-icon-next = 
+icon-prev = 
+icon-stop = 
+icon-play = 
+icon-pause = 
+icon-next = 
 
 label-song-maxlen = 25
 label-song-ellipsis = true
@@ -390,6 +390,23 @@ type = custom/script
 interval = 5
 exec = $HOME/.config/polybar/dropbox.sh
 click-left = nemo $HOME/Dropbox & disown
+
+[module/steam]
+type=custom/script
+interval = 5
+exec = $HOME/.config/polybar/steam.sh
+click-left = steam
+
+[module/redshift]
+type = custom/menu
+expand-right = true 
+format-spacing = 1
+
+label-separator = |
+menu-0-0 = toggle
+menu-0-0-exec = $HOME/.config/polybar/redshift-toggle.sh
+label-open = 
+label-close = 
 
 [module/powermenu]
 type = custom/menu

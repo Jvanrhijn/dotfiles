@@ -1,7 +1,7 @@
 #!/bin/sh
 
 if pgrep -x "dropbox" > /dev/null; then
-    echo " "
+    echo ""
 else
-    echo " "
+    echo ""
 fi
