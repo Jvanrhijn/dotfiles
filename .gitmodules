@@ -1,0 +1,3 @@
+[submodule ".config/polybar/polybar-gmail"]
+	path = .config/polybar/polybar-gmail
+	url = https://github.com/vyachkonovalov/polybar-gmail

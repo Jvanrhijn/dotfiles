@@ -373,7 +373,7 @@ format-underline = #1db954
 [module/gmail]
 type = custom/script
 interval = 300
-exec = ~/.config/polybar/gmail/launch.py --prefix '' --color '#be5046' --nosound
+exec = ~/.config/polybar/polybar-gmail/launch.py --prefix '' --color '#be5046' --nosound
 tail = true
 click-left = xdg-open https://mail.google.com
 
