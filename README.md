@@ -11,6 +11,10 @@ My config files. Master branch is for my laptop, desktop is, well, for my deskto
 * Tmux + ncmpcpp music player
 * neovim color scheme, from pywal
 
+**pkglist**
+
+This file is just a list of packages I consider essential for my system. Some are needed for the setup to work (like xorg and the font packages), some are things I personally need or want to have on any system (like tex). I recommend perusing the list and taking your pick, it should be fairly obvious which are required and which aren't. The packages are a mixed back of official repo and AUR packages, so install at your own risk.
+
 **Polybar**
 
 The part I customized most, I guess. It's still mostly stock, but the colors are read from .Xresources, and I changed which default modules it shows. See .config/polybar/config for the active modules. I also have a few custom modules using some scripts. Features:
