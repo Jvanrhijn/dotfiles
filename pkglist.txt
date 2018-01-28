@@ -24,3 +24,6 @@ rofi
 nerd-fonts-complete
 tmux
 cava
+qt5-styleplugins
+qt4
+dconf-editor
