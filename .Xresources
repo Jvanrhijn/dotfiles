@@ -1,4 +1,4 @@
-URxvt*font:         xft:Inconsolata-11,xft:FuraMono\ Nerd\ Font Mono:pixelsize=13
+URxvt*font:         xft:Inconsolata-11:antialias=true,xft:FuraMono\ Nerd\ Font Mono:pixelsize=13
 URxvt*letterSpace:  0
 URxvt*scrollBar:    false
 URxvt*termname:     urxvt-color
