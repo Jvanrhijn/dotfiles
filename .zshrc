@@ -22,6 +22,7 @@ alias here='urxvt -cd $PWD & disown'
 alias myip='curl http://ipecho.net/plain; echo'
 alias lyrics='spotify-lyric'
 alias music='tmux source-file $HOME/.config/tmux/music'
+alias gitdog='git log --all --decorate --oneline --graph'
 
 # prompt 
 PROMPT="[%n@%m %d]%(!.#.$) "
