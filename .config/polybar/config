@@ -20,7 +20,7 @@ alert = #bd2c40
 
 [bar/laptop]
 width = 100%
-height = 25
+height = 28
 radius = 0
 fixed-center = false
 bottom = true
@@ -31,9 +31,10 @@ foreground = ${colors.foreground}
 line-size = 3
 line-color = #f00
 
-border-bottom-size = 4
+border-bottom-size = 6
 border-left-size = 10
 border-right-size = 10
+border-top-size = 6
 border-size = 0
 border-color = #00000000
 
@@ -45,12 +46,11 @@ module-margin-right = 2
 
 font-0 = Monaco Sans:pixelsize=10;1
 font-1 = unifont:fontformat=truetype:size=8:antialias=false;0
-font-2 = FuraMono Nerd Font Mono:pixelsize=18;1
+font-2 = FuraMono Nerd Font Mono:pixelsize=16;1
 font-3 = Noto Sans Symbols2:pixelsize=11;1
 
-modules-left = i3 dropbox gmail mpd
-modules-center = 
-modules-right = backlight-acpi volume bbswitch cpu memory wlan battery time date powermenu
+modules-left = i3 steam dropbox volume backlight-acpi gmail mpd
+modules-right = bbswitch cpu memory wlan battery time date powermenu
 
 tray-position = none
 tray-padding = 2
@@ -181,8 +181,9 @@ label-song-ellipsis = true
 [module/xbacklight]
 type = internal/xbacklight
 
-format = <label> <bar>
-label = 
+format = <label>
+<bar>
+label =  %percentage%%
 
 bar-width = 10
 bar-indicator = |
@@ -285,13 +286,14 @@ label = " %date%"
 [module/volume]
 type = internal/volume
 
-format-volume = <label-volume> <bar-volume>
-label-volume = " "
+format-volume = <label-volume>
+; <bar-volume>
+label-volume = " %percentage%%"
 label-volume-foreground = ${root.foreground}
 
-format-muted-prefix = " "
+format-muted-prefix = " "
 format-muted-foreground = ${colors.foreground-alt}
-label-muted = sound muted
+;label-muted = sound muted
 
 bar-volume-width = 10
 bar-volume-foreground-0 = #55aa55
@@ -388,6 +390,12 @@ type = custom/script
 interval = 5
 exec = $HOME/.config/polybar/dropbox.sh
 click-left = nemo $HOME/Dropbox & disown
+
+[module/steam]
+type = custom/script
+interval = 5
+exec = $HOME/.config/polybar/steam.sh
+click-left = steam
 
 [module/bbswitch]
 type = custom/script
