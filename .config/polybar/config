@@ -49,8 +49,8 @@ font-1 = unifont:fontformat=truetype:size=8:antialias=false;0
 font-2 = FuraMono Nerd Font Mono:pixelsize=16;1
 font-3 = Noto Sans Symbols2:pixelsize=11;1
 
-modules-left = i3 steam dropbox volume backlight-acpi gmail mpd
-modules-right = bbswitch cpu memory wlan battery time date powermenu
+modules-left = i3 wlan steam dropbox volume backlight-acpi gmail mpd
+modules-right = bbswitch cpu memory battery time date powermenu
 
 tray-position = none
 tray-padding = 2
@@ -224,11 +224,9 @@ interface = wlp4s0
 interval = 3.0
 
 format-connected = <label-connected>
-format-connected-underline = ${xrdb:color3}
+;format-connected-underline = ${xrdb:color3}
 ;label-connected = %essid%
 label-connected = 
-
-click-left = exec nm-connection-editor
 
 format-disconnected =
 ;format-disconnected = <label-disconnected>
