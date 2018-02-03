@@ -1,7 +1,8 @@
 new
 neww 'ncmpcpp'
-splitw -fh 'ncmpcpp'
+splitw -fh -p 40 'ncmpcpp'
 send-keys 1
 send-keys l
 last-pane
-splitw -fvd 'cava'
+splitw -fvd -p 35 'cava'
+set -g status off
