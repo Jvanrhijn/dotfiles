@@ -12,6 +12,9 @@ set tabstop=4
 set expandtab
 set shiftwidth=4
 
+" Column max width line
+set colorcolumn=100
+
 " General formatting
 set number
 syntax on
