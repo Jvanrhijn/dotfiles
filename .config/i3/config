@@ -176,6 +176,7 @@ for_window [class="URxvt"] border pixel 0
 
 # Set some windows default floating
 for_window [class="Matplotlib" instance="matplotlib"] floating enable
+for_window [class="Nemo" instance="nemo"] floating enable
 
 exec xrandr --dpi 100
 exec xrdb -merge $HOME/.Xresources

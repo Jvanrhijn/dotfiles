@@ -226,7 +226,7 @@ interval = 3.0
 format-connected = <label-connected>
 ;format-connected-underline = ${xrdb:color3}
 ;label-connected = %essid%
-label-connected = 
+label-connected = 
 
 format-disconnected =
 ;format-disconnected = <label-disconnected>
@@ -234,11 +234,6 @@ format-disconnected =
 ;label-disconnected = %ifname% disconnected
 ;label-disconnected-foreground = ${colors.foreground-alt}
 
-ramp-signal-0 = 
-ramp-signal-1 = 
-ramp-signal-2 = 
-ramp-signal-3 = 
-ramp-signal-4 = 
 ramp-signal-foreground = ${colors.foreground-alt}
 
 [module/eth]

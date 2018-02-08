@@ -24,3 +24,5 @@ rofi
 mpc
 ncmpcpp
 tmux
+qt5ct
+qt5-styleplugins

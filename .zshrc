@@ -21,6 +21,8 @@ alias todo='todotxt-machine'
 alias here='urxvt -cd $PWD & disown'
 alias myip='curl http://ipecho.net/plain; echo'
 alias music='tmux source-file $HOME/.config/tmux/music'
+alias gitdog='git log --all --decorate --oneline --graph'
+alias vim='nvim'
 
 # prompt 
 PROMPT="[%n@%m %d]%(!.#.$) "
@@ -32,7 +34,7 @@ PROMPT="[%n@%m %d]%(!.#.$) "
 eval $(thefuck --alias)
 
 # PATH
-PATH=$PATH:$HOME/opt/gcc-arm-none-eabi-6-2017-q2-update/bin
+PATH=$PATH:$HOME/opt/gcc-arm-none-eabi-7-2017-q4-major/bin
 
 # source
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
