@@ -174,14 +174,16 @@ for_window [class="^.*"] border pixel 0
 
 # Windows that should always float
 for_window [class="Matplotlib" instance="matplotlib"] floating enable
+for_window [class="Nemo" instance="nemo"] floating enable
 
 # Terminal window borders
 for_window [class="URxvt"] border pixel 0
 
 exec xrandr --dpi 100
-exec /usr/bin/compton --config ~/.config/compton/compton.conf -b --opengl
+exec xrdb -merge $HOME/.Xresources
 exec --no-startup-id dropbox &
 exec pulseaudio --daemonize
 exec --no-startup-id polybar desktop &
+exec /usr/bin/compton --config ~/.config/compton/compton.conf -b --opengl
+exec --no-startup-id wal $HOME/Dropbox/Wallpapers -o wal-set
 exec xbindkeys
-exec xrdb -merge $HOME/.Xresources

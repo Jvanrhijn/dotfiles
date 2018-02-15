@@ -20,7 +20,7 @@ alert = #bd2c40
 [bar/desktop]
 ;monitor = ${env:MONITOR:HDMI-1}
 width = 100%
-height = 25
+height = 30
 ;offset-x = 1%
 ;offset-y = 1%
 radius = 0
@@ -34,9 +34,9 @@ line-size = 3
 line-color = #f00
 
 border-bottom-size = 0
-border-left-size = 8
-border-right-size = 8
-border-top-size = 6
+border-left-size = 0
+border-right-size = 0
+border-top-size = 0
 border-size = 0
 border-color = #00000000
 
@@ -53,9 +53,9 @@ font-2 = FuraMono Nerd Font Mono:pixelsize=16;1
 font-1 = unifont:fontformat=truetype:size=8:antialias=false;0
 font-0 = Monaco Sans:pixelsize=9;1
 
-modules-left = i3 steam dropbox gmail mpd
+modules-left = i3 dropbox gmail mpd
 modules-center = none
-modules-right = weather cpu memory xkeyboard time date powermenu
+modules-right = weather temperature cpu memory xkeyboard time date powermenu
 
 tray-position = none
 tray-padding = 2
@@ -362,7 +362,11 @@ label = %temperature%
 label-warn = %temperature%
 label-warn-foreground = ${colors.secondary}
 
-ramp-0 = 
+ramp-0 = 
+ramp-1 = 
+ramp-2 = 
+ramp-3 = 
+ramp-4 = 
 ramp-foreground = ${colors.foreground-alt}
 
 [module/spotify]

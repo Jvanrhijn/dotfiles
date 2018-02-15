@@ -81,7 +81,7 @@
     XF86AudioNext 
 
 #rofi run
-"rofi -matching fuzzy -show run"
+"rofi -theme dmenu -matching fuzzy -show run"
     m:0x8 + c:53
     Alt + x 
 

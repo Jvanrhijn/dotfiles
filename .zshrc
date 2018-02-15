@@ -23,6 +23,7 @@ alias myip='curl http://ipecho.net/plain; echo'
 alias lyrics='spotify-lyric'
 alias music='tmux source-file $HOME/.config/tmux/music'
 alias gitdog='git log --all --decorate --oneline --graph'
+alias vim='nvim'
 
 # prompt 
 PROMPT="[%n@%m %d]%(!.#.$) "
@@ -45,3 +46,7 @@ source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zs
 # pure prompt
 autoload -U promptinit; promptinit
 prompt pure
+
+# Set default editor
+export VISUAL=nvim
+export EDITOR="$VISUAL"
