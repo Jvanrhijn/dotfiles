@@ -171,6 +171,7 @@ bindsym $mod+r mode "resize"
 gaps outer 0
 gaps inner 8
 for_window [class="^.*"] border pixel 0
+smart_gaps on
 
 # Windows that should always float
 for_window [class="Matplotlib" instance="matplotlib"] floating enable
