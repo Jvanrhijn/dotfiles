@@ -31,10 +31,10 @@ foreground = ${colors.foreground}
 line-size = 3
 line-color = #f00
 
-border-bottom-size = 6
-border-left-size = 10
-border-right-size = 10
-border-top-size = 6
+border-bottom-size = 0
+border-left-size = 0
+border-right-size = 0
+border-top-size = 0
 border-size = 0
 border-color = #00000000
 
@@ -156,7 +156,7 @@ label-urgent-padding = ${module/bspwm.label-urgent-padding}
 
 ws-icon-0 = 1;
 ws-icon-1 = 2;
-ws-icon-2 = 3;
+ws-icon-2 = 3;
 ws-icon-3 = 4;4
 ws-icon-4 = 5;5
 ws-icon-5 = 6;6
