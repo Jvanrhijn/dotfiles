@@ -21,7 +21,7 @@ set number
 syntax on
 
 " Turn off line number background
-highlight clear LineNr
+" highlight clear LineNr
 
 " Turn on hybrid line numbers
 set number relativenumber
