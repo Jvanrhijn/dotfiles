@@ -24,6 +24,7 @@ alias lyrics='spotify-lyric'
 alias music='tmux source-file $HOME/.config/tmux/music'
 alias gitdog='git log --all --decorate --oneline --graph'
 alias vim='nvim'
+alias proc='ps aux | grep'
 
 # prompt 
 PROMPT="[%n@%m %d]%(!.#.$) "
