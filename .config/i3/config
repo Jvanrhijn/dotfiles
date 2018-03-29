@@ -176,6 +176,7 @@ smart_gaps on
 # Windows that should always float
 for_window [class="Matplotlib" instance="matplotlib"] floating enable
 for_window [class="Nemo" instance="nemo"] floating enable
+for_window [class="Pavucontrol" instance="pavucontrol"] floating enable
 
 # Terminal window borders
 for_window [class="URxvt"] border pixel 0
