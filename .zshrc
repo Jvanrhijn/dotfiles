@@ -26,6 +26,11 @@ alias gitdog='git log --all --decorate --oneline --graph'
 alias vim='nvim'
 alias proc='ps aux | grep'
 
+# functions
+texed() {
+    okular "$1.pdf" & disown && vim "$1.tex"
+}
+
 # prompt 
 PROMPT="[%n@%m %d]%(!.#.$) "
 
