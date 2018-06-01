@@ -50,7 +50,7 @@ font-2 = FuraMono Nerd Font Mono:pixelsize=16;1
 font-3 = Noto Sans Symbols2:pixelsize=11;1
 
 modules-left = i3 wlan steam dropbox volume backlight-acpi mpd
-modules-right = bbswitch cpu memory battery time date powermenu
+modules-right = bbswitch temperature cpu memory battery time date powermenu
 
 tray-position = none
 tray-padding = 2

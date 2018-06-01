@@ -24,6 +24,26 @@ alias music='tmux source-file $HOME/.config/tmux/music'
 alias gitdog='git log --all --decorate --oneline --graph'
 alias vim='nvim'
 alias proc='ps aux | grep'
+alias getscr='xrandr --current'
+alias cart='ssh vanrhijn@cartesius.surfsara.nl'
+alias door='ssh vanrhijn@doornode.surfsara.nl'
+
+# functions
+texed() {
+    okular "$1.pdf" & disown && vim -c "NeoTexOn" "$1.tex"
+}
+
+duplscr() {
+    xrandr --output "$1" --same-as DP-1
+}
+
+rightscr() {
+    xrandr --output "$1" --right-of DP-1
+}
+
+leftscr() {
+    xrandr --output "$1" --left-of DP-1
+}
 
 # prompt 
 PROMPT="[%n@%m %d]%(!.#.$) "
@@ -39,6 +59,10 @@ PATH=$PATH:$HOME/opt/gcc-arm-none-eabi-7-2017-q4-major/bin
 
 # source
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source /opt/intel/parallel_studio_xe_2018/compilers_and_libraries_2018/linux/bin/ifortvars.sh intel64
+
+# JDK
+export JAVA_HOME=/usr/lib/jvm/java-10-openjdk
 
 # pure prompt
 autoload -U promptinit; promptinit
