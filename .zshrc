@@ -26,9 +26,11 @@ alias gitdog='git log --all --decorate --oneline --graph'
 alias vim='nvim'
 alias proc='ps aux | grep'
 
+alias door='ssh vanrhijn@doornode.surfsara.nl'
+
 # functions
 texed() {
-    okular "$1.pdf" & disown && vim "$1.tex"
+    okular "$1.pdf" & disown && vim -c "NeoTexOn" "$1.tex"
 }
 
 # prompt 

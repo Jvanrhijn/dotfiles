@@ -3,3 +3,4 @@ if [[ ! $DISPLAY && $XDG_VTNR -eq 1 ]]; then
 fi
 
 export PATH="$HOME/.cargo/bin:$PATH"
+export DXVK_HUD=1

@@ -1,8 +1,7 @@
 " Plugings
 call plug#begin('~/.local/share/nvim/plugged')
-" Plug 'donRaphaco/neotex', { 'for': 'tex' }
+Plug 'donRaphaco/neotex', { 'for': 'tex' }
 Plug 'dylanaraps/wal.vim'
-Plug '~/Git/neotex', { 'for': 'tex' }
 call plug#end()
 
 "colorscheme wal
