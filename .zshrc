@@ -40,7 +40,9 @@ PROMPT="[%n@%m %d]%(!.#.$) "
 (cat ~/.cache/wal/sequences &)
 
 # merge .Xresources
-xrdb -merge ~/.Xresources
+#xrdb -merge ~/.Xresources
+# Forcibly load colorscheme from script
+sh $HOME/.config/molokai.sh
 
 # fuck
 eval $(thefuck --alias)
@@ -58,3 +60,5 @@ prompt pure
 # Set default editor
 export VISUAL=nvim
 export EDITOR="$VISUAL"
+
+

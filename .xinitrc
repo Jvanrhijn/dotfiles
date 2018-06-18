@@ -1,6 +1,5 @@
-[[ -f ~/.Xresources ]] && xrbd -merge -I$HOME ~/.Xresources
+[[ -f ~/.Xresources ]] && xrdb -merge ~/.Xresources
 setxkbmap us -variant intl
-wal -i $HOME/Dropbox/Wallpapers -o wal-set
 export QT_QPA_PLATFORMTHEME=gtk2
 export DESKTOP_SESSION=gnome
 xset s off -dpms
