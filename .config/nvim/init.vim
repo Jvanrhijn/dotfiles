@@ -2,6 +2,7 @@
 call plug#begin('~/.local/share/nvim/plugged')
 Plug 'donRaphaco/neotex', { 'for': 'tex' }
 Plug 'dylanaraps/wal.vim'
+Plug 'zah/nim.vim'
 call plug#end()
 
 "colorscheme wal
@@ -31,3 +32,16 @@ augroup numbertoggle
 augroup END
 
 runtime macros/matchit.vim
+
+" Nim 
+fun! JumpToDef()
+  if exists("*GotoDefinition_" . &filetype)
+    call GotoDefinition_{&filetype}()
+  else
+    exe "norm! \<C-]>"
+  endif
+endf
+
+" Jump to tag
+nn <M-g> :call JumpToDef()<cr>
+ino <M-g> <esc>:call JumpToDef()<cr>i

@@ -1,4 +1,4 @@
-URxvt*font:         xft:Inconsolata-12,xft:FuraMono\ Nerd\ Font\ Mono:pixelsize=12
+URxvt*font:         xft:Inconsolata-15,xft:FuraMono\ Nerd\ Font\ Mono:pixelsize=15
 URxvt*letterSpace:  0
 URxvt*scrollBar:    false
 URxvt*termname:     urxvt-color
@@ -10,3 +10,36 @@ URxvt.keysym.C-S-Up:   font-size:incglobal
 URxvt.keysym.C-S-Down: font-size:decglobal
 URxvt.keysym.C-equal:  font-size:reset
 URxvt.keysym.C-slash:  font-size:show
+
+xterm*font:         xft:Inconsolata-15,xft:FuraMono\ Nerd\ Font\ Mono:pixelsize=15
+
+
+*foreground:#CCCCCC
+*background:#1B1D1E
+URxvt*borderColor:#1B1D1E
+
+!black darkgray
+*color0:    #1B1D1E
+*color8:    #808080
+!darkred red
+*color1:    #FF0044
+*color9:    #F92672
+!darkgreen green
+*color2:    #82B414
+*color10:   #A6E22E
+!darkyellow yellow
+*color3:    #FD971F
+*color11:   #E6DB74
+!darkblue blue
+*color4:    #266C98
+*color12:   #7070F0
+!darkmagenta magenta
+*color5:    #AC0CB1
+*color13:   #D63AE1
+!darkcyan cyan
+*color6:    #AE81FF
+*color14:   #66D9EF
+!gray white
+*color7:    #CCCCCC
+*color15:   #F8F8F2
+

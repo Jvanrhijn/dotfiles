@@ -27,6 +27,7 @@ alias proc='ps aux | grep'
 alias getscr='xrandr --current'
 alias cart='ssh vanrhijn@cartesius.surfsara.nl'
 alias door='ssh vanrhijn@doornode.surfsara.nl'
+alias copy='xclip -o | xclip -selection clipboard -i'
 
 # functions
 texed() {
@@ -55,7 +56,7 @@ PROMPT="[%n@%m %d]%(!.#.$) "
 eval $(thefuck --alias)
 
 # PATH
-PATH=$PATH:$HOME/opt/gcc-arm-none-eabi-7-2017-q4-major/bin
+PATH=$PATH:$HOME/opt/gcc-arm-none-eabi-7-2017-q4-major/bin:$HOME/.local/bin
 
 # source
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
@@ -67,3 +68,5 @@ export JAVA_HOME=/usr/lib/jvm/java-10-openjdk
 # pure prompt
 autoload -U promptinit; promptinit
 prompt pure
+
+sh $HOME/.config/molokai.sh
