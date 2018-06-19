@@ -49,8 +49,8 @@ font-1 = unifont:fontformat=truetype:size=8:antialias=false;0
 font-2 = FuraMono Nerd Font Mono:pixelsize=16;1
 font-3 = Noto Sans Symbols2:pixelsize=11;1
 
-modules-left = i3 wlan steam dropbox volume backlight-acpi mpd
-modules-right = bbswitch temperature cpu memory battery time date powermenu
+modules-left = i3 wlan steam dropbox volume backlight-acpi 
+modules-right = spotify bbswitch temperature cpu memory battery time date powermenu
 
 tray-position = none
 tray-padding = 2
@@ -367,7 +367,7 @@ type = custom/script
 interval = 1
 format-prefix = " "
 format = <label>
-exec = ~/.config/polybar/spotify
+exec = ~/.config/polybar/polybar-spotify/spotify_status.py
 
 format-underline = #1db954
 

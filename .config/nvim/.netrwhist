@@ -1,5 +1,6 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =3
+let g:netrw_dirhist_cnt =4
 let g:netrw_dirhist_1='/home/jesse/Git/champ/make_config'
 let g:netrw_dirhist_2='/home/jesse/Dropbox/Uni/Bachelor assignment/gamess/qmc/optjasci/vmc_sr_out'
 let g:netrw_dirhist_3='/tmp/nimcache'
+let g:netrw_dirhist_4='/home/jesse/.config/polybar/polybar-spotify'
