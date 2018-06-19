@@ -22,7 +22,8 @@ The part I customized most, I guess. It's still mostly stock, but the colors are
 * Gmail module, by vyachkonovalov
 * Dropbox module, checks if dropbox is running. If so, it prints a little icon in the bar. Clicking on the icon opens $HOME/Dropbox in Nemo.
 * Steam module, same as the dropbox one, but opens the steam window when clicked.
-* Workspaces with icons! No numbers, since I can remember which workspace corresponds to which icon, and it looks nicer this way.
+* Spotify module: https://github.com/Jvanrhijn/polybar-spotify
+* Workspaces with icons.
 * Laptop: bbswitch status checker, since it doesn't always turn off properly.
 
 **i3-gaps**
