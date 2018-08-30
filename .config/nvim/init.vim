@@ -5,7 +5,7 @@ Plug 'dylanaraps/wal.vim'
 call plug#end()
 
 "colorscheme wal
-colorscheme molokai
+"colorscheme molokai
 
 " Spaces, not tabs!
 set tabstop=4

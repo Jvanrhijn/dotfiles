@@ -158,16 +158,16 @@ label-urgent = %icon%
 label-urgent-background = ${module/bspwm.label-urgent-background}
 label-urgent-padding = ${module/bspwm.label-urgent-padding}
 
-ws-icon-0 = 1;
-ws-icon-1 = 2;
-ws-icon-2 = 3;
+ws-icon-0 = 1;1: 
+ws-icon-1 = 2;2: 
+ws-icon-2 = 3;3: 
 ws-icon-3 = 4;4
 ws-icon-4 = 5;5
 ws-icon-5 = 6;6
 ws-icon-6 = 7;7
 ws-icon-7 = 8;8
-ws-icon-8 = 9;
-ws-icon-9 = 10;🎜
+ws-icon-8 = 9;9: 
+ws-icon-9 = 10;10: 🎜
 
 [module/mpd]
 type = internal/mpd
@@ -371,9 +371,8 @@ ramp-foreground = ${colors.foreground-alt}
 [module/spotify]
 type = custom/script
 interval = 1
-;format-prefix = " "
 format = <label>
-exec = ~/.config/polybar/polybar-spotify/spotify_status.py -f '{play_pause} {song} - {artist}'
+exec = python3 ~/.config/polybar/polybar-spotify/spotify_status.py -f '{play_pause} {song} - {artist}'
 
 format-underline = #1db954
 

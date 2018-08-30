@@ -13,9 +13,10 @@ autoload -Uz compinit
 compinit
 # End of lines added by compinstall
 
+alias python='/usr/bin/python3.6'
 alias ls='ls --color=auto -C'
 alias la='ls -a'
-alias config='git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
+alias config='git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 alias nvidia='optirun nvidia-settings -c :8'
 alias todo='todotxt-machine'
 alias here='urxvt -cd $PWD & disown'
@@ -37,11 +38,9 @@ texed() {
 # prompt 
 PROMPT="[%n@%m %d]%(!.#.$) "
 
-# import color scheme from wal
-(cat ~/.cache/wal/sequences &)
-
 # merge .Xresources
-#xrdb -merge ~/.Xresources
+xrdb -merge ~/.Xresources
+
 # Forcibly load colorscheme from script
 sh $HOME/.config/molokai.sh
 
@@ -49,10 +48,7 @@ sh $HOME/.config/molokai.sh
 eval $(thefuck --alias)
 
 # PATH
-PATH=$PATH:$HOME/.local/bin:$HOME/opt/gcc-arm-none-eabi-7-2017-q4-major/bin
-
-# source
-source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+#PATH=$PATH:$HOME/.local/bin:$HOME/opt/gcc-arm-none-eabi-7-2017-q4-major/bin
 
 # pure prompt
 autoload -U promptinit; promptinit
@@ -63,3 +59,5 @@ export VISUAL=nvim
 export EDITOR="$VISUAL"
 
 
+# zsh syntax highlighting plugin
+source /home/jesse/.config/zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh

@@ -199,8 +199,13 @@ exec xrandr --dpi 100
 exec xrdb -merge $HOME/.Xresources
 exec sh $HOME/.config/molokai.sh
 exec feh --no-fehbg --bg-fill "$(find "${HOME}/Dropbox/Wallpapers" -type f | sort -R | tail -1)"
-exec --no-startup-id dropbox &
-exec pulseaudio --daemonize
+#exec --no-startup-id dropbox &
+#exec pulseaudio --daemonize
 exec --no-startup-id polybar desktop &
-exec /usr/bin/compton --config ~/.config/compton/compton.conf -b --opengl
+#exec /usr/bin/compton --config ~/.config/compton/compton.conf -b --opengl
 exec xbindkeys
+
+exec --no-startup-id /usr/lib/gnome-settings-daemon/gsd-xsettings
+exec_always --no-startup-id gnome-power-manager
+exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
+exec --no-startup-id gnome-flashback
