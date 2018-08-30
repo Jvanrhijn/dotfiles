@@ -25,6 +25,7 @@ alias music='tmux source-file $HOME/.config/tmux/music'
 alias gitdog='git log --all --decorate --oneline --graph'
 alias vim='nvim'
 alias proc='ps aux | grep'
+alias rbg='feh --no-fehbg --bg-fill "$(find "${HOME}/Dropbox/Wallpapers" -type f | sort -R | tail -1)"'
 
 alias door='ssh vanrhijn@doornode.surfsara.nl'
 

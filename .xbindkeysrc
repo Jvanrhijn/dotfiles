@@ -66,22 +66,22 @@
     Mod2 + XF86AudioMute 
 
 #Pause music
-"mpc toggle"
+"playerctl play-pause"
     m:0x0 + c:172
     XF86AudioPlay 
 
 #previous song
-"mpc prev"
+"playerctl previous"
     m:0x0 + c:173
     XF86AudioPrev 
 
 #next song
-"mpc next"
+"playerctl next"
     m:0x0 + c:171
     XF86AudioNext 
 
 #rofi run
-"rofi -theme dmenu -matching fuzzy -show run"
+"rofi -show run"
     m:0x8 + c:53
     Alt + x 
 

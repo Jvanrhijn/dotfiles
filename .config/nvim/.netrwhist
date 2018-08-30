@@ -1,5 +1,5 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =8
+let g:netrw_dirhist_cnt =9
 let g:netrw_dirhist_1='/home/jesse/.config/gtk-2.0'
 let g:netrw_dirhist_2='/usr/share/icons/default'
 let g:netrw_dirhist_3='/home/jesse/.config/cava'
@@ -8,3 +8,4 @@ let g:netrw_dirhist_5='/home/jesse/.config/i3'
 let g:netrw_dirhist_6='/home/jesse/Git/advantech-test/advantech'
 let g:netrw_dirhist_7='/home/jesse/Git/photosort/src'
 let g:netrw_dirhist_8='/home/jesse/Downloads/HEYNODEECU/build/CMakeFiles'
+let g:netrw_dirhist_9='/home/jesse/git/CXXfoil/tests'
