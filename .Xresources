@@ -1,9 +1,9 @@
-URxvt*font:         xft:Inconsolata-14:antialias=true,xft:FuraMono\ Nerd\ Font Mono:pixelsize=14
+URxvt*font:         xft:Inconsolata-12:antialias=true,xft:FuraMono\ Nerd\ Font Mono:pixelsize=12
 URxvt*letterSpace:  0
 URxvt*scrollBar:    false
-URxvt*termname:     urxvt-color
+URxvt*termname:     rxvt-unicode-256color
 
-xterm*font:         xft:Inconsolata-14:antialias=true,xft:FuraMono\ Nerd\ Font Mono:pixelsize=14
+xterm*font:         xft:Inconsolata-12:antialias=true,xft:FuraMono\ Nerd\ Font Mono:pixelsize=12
 
 URxvt.perl-ext-common: ...,font-size
 URxvt.keysym.C-Up:     font-size:increase
@@ -30,7 +30,8 @@ URxvt.keysym.C-slash: font-size:show
 *color11:   #E6DB74
 !darkblue blue
 *color4:    #266C98
-*color12:   #7070F0
+!*color12:   #7070F0
+URxvt.color12: rgb:5c/5c/ff
 !darkmagenta magenta
 *color5:    #AC0CB1
 *color13:   #D63AE1

@@ -45,11 +45,6 @@
     m:0x0 + c:232
     XF86MonBrightnessDown 
 
-#Lock
-"slimlock"
-    m:0x40 + c:46
-    Mod4 + l 
-
 #Increase volume
 "amixer -q sset Master 3%+"
     m:0x0 + c:123
@@ -80,10 +75,6 @@
     m:0x0 + c:171
     XF86AudioNext 
 
-#rofi run
-"rofi -show run"
-    m:0x8 + c:53
-    Alt + x 
-
+#"rofi -show run"
 #
 # End of xbindkeys configuration

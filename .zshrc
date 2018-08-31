@@ -13,23 +13,6 @@ autoload -Uz compinit
 compinit
 # End of lines added by compinstall
 
-alias python='/usr/bin/python3.6'
-alias ls='ls --color=auto -C'
-alias la='ls -a'
-alias config='git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
-alias nvidia='optirun nvidia-settings -c :8'
-alias todo='todotxt-machine'
-alias here='urxvt -cd $PWD & disown'
-alias myip='curl http://ipecho.net/plain; echo'
-alias lyrics='spotify-lyric'
-alias music='tmux source-file $HOME/.config/tmux/music'
-alias gitdog='git log --all --decorate --oneline --graph'
-alias vim='nvim'
-alias proc='ps aux | grep'
-alias rbg='feh --no-fehbg --bg-fill "$(find "${HOME}/Dropbox/Wallpapers" -type f | sort -R | tail -1)"'
-
-alias door='ssh vanrhijn@doornode.surfsara.nl'
-
 # functions
 texed() {
     okular "$1.pdf" & disown && vim -c "NeoTexOn" "$1.tex"
@@ -58,6 +41,8 @@ prompt pure
 export VISUAL=nvim
 export EDITOR="$VISUAL"
 
-
 # zsh syntax highlighting plugin
 source /home/jesse/.config/zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+# Get aliases
+. $HOME/.zsh_aliases
