@@ -51,24 +51,15 @@
     XF86AudioMute 
 
 #Increase volume
-"amixer -q sset Master 3%+"
+"amixer -q sset Master 5%+"
     m:0x0 + c:123
     XF86AudioRaiseVolume 
 
 #Decrease
-"amixer -q sset Master 3%-"
+"amixer -q sset Master 5%-"
     m:0x0 + c:122
     XF86AudioLowerVolume 
 
-#rofi launcher
-"rofi -show run -i"
-    m:0x8 + c:53
-    Alt + x 
-
-#Lock
-"slimlock"
-    m:0x50 + c:46
-    Mod2+Mod4 + l 
-
 #
 # End of xbindkeys configuration
+

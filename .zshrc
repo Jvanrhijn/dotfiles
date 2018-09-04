@@ -15,10 +15,10 @@ compinit
 
 alias ls='ls --color=auto -C'
 alias la='ls -a'
-alias config='git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
+alias config='git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 alias nvidia='optirun nvidia-settings -c :8'
 alias todo='todotxt-machine'
-alias here='urxvt -cd $PWD & disown'
+alias here='termite -d $PWD & disown'
 alias myip='curl http://ipecho.net/plain; echo'
 alias music='tmux source-file $HOME/.config/tmux/music'
 alias gitdog='git log --all --decorate --oneline --graph'
@@ -28,6 +28,12 @@ alias getscr='xrandr --current'
 alias cart='ssh vanrhijn@cartesius.surfsara.nl'
 alias door='ssh vanrhijn@doornode.surfsara.nl'
 alias copy='xclip -o | xclip -selection clipboard -i'
+alias python='python3.6'
+alias copr='sudo dnf copr enable'
+alias insty='sudo dnf install -y'
+alias ipython='ipython3'
+alias matlab='matlab -nodesktop -softwareopengl -nosplash'
+
 
 # functions
 texed() {
@@ -49,18 +55,17 @@ leftscr() {
 # prompt 
 PROMPT="[%n@%m %d]%(!.#.$) "
 
-# import color scheme from wal
-(cat ~/.cache/wal/sequences &)
-
 # fuck
 eval $(thefuck --alias)
+
+# Forcibly load colorscheme from script
+sh $HOME/.config/molokai.sh
 
 # PATH
 PATH=$PATH:$HOME/opt/gcc-arm-none-eabi-7-2017-q4-major/bin:$HOME/.local/bin
 
 # source
-source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-source /opt/intel/parallel_studio_xe_2018/compilers_and_libraries_2018/linux/bin/ifortvars.sh intel64
+#source /opt/intel/parallel_studio_xe_2018/compilers_and_libraries_2018/linux/bin/ifortvars.sh intel64
 
 # JDK
 export JAVA_HOME=/usr/lib/jvm/java-10-openjdk
@@ -69,4 +74,8 @@ export JAVA_HOME=/usr/lib/jvm/java-10-openjdk
 autoload -U promptinit; promptinit
 prompt pure
 
-sh $HOME/.config/molokai.sh
+source /home/jesse/.config/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+# C/CXX compilers
+export CC=/usr/bin/gcc
+export CXX=/usr/bin/g++

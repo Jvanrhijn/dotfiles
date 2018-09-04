@@ -1,6 +1,5 @@
 echo -ne '\e]10;#A0A0A0\a'
-#echo -ne '\e]11;#1B1D1E\a'
-echo -ne '\e]11;#000000\a'
+echo -ne '\e]11;#1B1D1E\a'
 echo -ne '\e]12;#A0A0A0\a'
 echo -ne '\e]4;0;#1B1D1E\a'
 echo -ne '\e]4;1;#F92672\a'
@@ -18,3 +17,4 @@ echo -ne '\e]4;12;#62ADE3\a'
 echo -ne '\e]4;13;#BFA0FE\a'
 echo -ne '\e]4;14;#94D8E5\a'
 echo -ne '\e]4;15;#F8F8F2\a'
+

@@ -41,7 +41,7 @@ font pango:monospace 8
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec i3-sensible-terminal
+bindsym $mod+Return exec termite
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -159,6 +159,7 @@ mode "resize" {
 }
 
 bindsym $mod+r mode "resize"
+bindsym $mod+x exec rofi -show drun
 
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
@@ -196,7 +197,7 @@ client.background $bg
 exec xrandr --dpi 100
 exec xrdb -merge $HOME/.Xresources
 exec sh $HOME/.config/molokai.sh
-exec feh --no-fehbg --bg-fill "$(find "${HOME}/Dropbox/Wallpapers" -type f | sort -R | tail -1)"
+#exec feh --no-fehbg --bg-fill "$(find "${HOME}/Dropbox/Wallpapers" -type f | sort -R | tail -1)"
 exec --no-startup-id dropbox &
 exec --no-startup-id polybar laptop &
 exec --no-startup-id nm-applet & 
