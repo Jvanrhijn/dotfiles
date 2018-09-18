@@ -32,6 +32,7 @@ eval $(thefuck --alias)
 
 # PATH
 #PATH=$PATH:$HOME/.local/bin:$HOME/opt/gcc-arm-none-eabi-7-2017-q4-major/bin
+PATH=$PATH:$HOME/.local/bin
 
 # pure prompt
 autoload -U promptinit; promptinit
