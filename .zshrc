@@ -32,7 +32,7 @@ alias python='python3.6'
 alias copr='sudo dnf copr enable'
 alias insty='sudo dnf install -y'
 alias ipython='ipython3'
-alias matlab='matlab -nodesktop -softwareopengl -nosplash'
+alias matlab='matlab -softwareopengl -nodesktop -nosplash'
 
 
 # functions
@@ -74,8 +74,9 @@ export JAVA_HOME=/usr/lib/jvm/java-10-openjdk
 autoload -U promptinit; promptinit
 prompt pure
 
-source /home/jesse/.config/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source $HOME/.config/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source ~/.config/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 # C/CXX compilers
-export CC=/usr/bin/gcc
-export CXX=/usr/bin/g++
+export CC=/usr/bin/clang
+export CXX=/usr/bin/clang++

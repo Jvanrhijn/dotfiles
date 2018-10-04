@@ -365,9 +365,8 @@ ramp-foreground = ${colors.foreground-alt}
 [module/spotify]
 type = custom/script
 interval = 1
-#format-prefix = ""
 format = <label>
-exec = python3.6 ~/.config/polybar/polybar-spotify/spotify_status.py -f "{play_pause} {artist} - {song}"
+exec = python3 ~/.config/polybar/polybar-spotify/spotify_status.py -f "{play_pause} {artist} - {song}"
 
 format-underline = #1db954
 
