@@ -5,9 +5,6 @@ polybar
 i3-gaps
 xorg-server
 xorg-xinit
-slim
-slim-themes
-python-pywal
 python-pip
 compton
 rxvt-unicode

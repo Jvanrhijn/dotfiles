@@ -52,6 +52,10 @@ leftscr() {
     xrandr --output "$1" --left-of DP-1
 }
 
+ffsettheme() {
+  sudo sed -i "s/^\(Exec=\)firefox %u/\1env GTK_THEME=$1 firefox %u/" $(locate firefox.desktop)
+}
+
 # prompt 
 PROMPT="[%n@%m %d]%(!.#.$) "
 

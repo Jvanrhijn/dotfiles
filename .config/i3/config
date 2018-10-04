@@ -190,7 +190,7 @@ set_from_resource $fg i3wm.color7 #f0f0f0
 set_from_resource $bg i3wm.color2 #f0f0f0
 set_from_resource $bd i3wm.color0
 set_from_resource $bf i3wm.color5
-set_from_resource $bi i3wm.color9
+set_from_resource $bi i3wm.color12
 set_from_resource $bu i3wm.color3
 
 # class                 border  backgr. text indicator child_border
