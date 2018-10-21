@@ -18,6 +18,14 @@ texed() {
     okular "$1.pdf" & disown && vim -c "NeoTexOn" "$1.tex"
 }
 
+ffsettheme() {
+  sudo sed -i "s/Exec=firefox %u/Exec=env GTK_THEME=$1 firefox %u/g" $(locate firefox.desktop)
+}
+
+cl() {
+  cd $1 && ls --color=auto -C
+}
+
 # prompt 
 PROMPT="[%n@%m %d]%(!.#.$) "
 
@@ -43,7 +51,12 @@ export VISUAL=nvim
 export EDITOR="$VISUAL"
 
 # zsh syntax highlighting plugin
-source /home/jesse/.config/zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source $HOME/.config/zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source $HOME/.config/zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 # Get aliases
 . $HOME/.zsh_aliases
+
+# Intel MKL libraries
+source /opt/intel/compilers_and_libraries_2018.0.128/linux/mkl/bin/mklvars.sh intel64
+

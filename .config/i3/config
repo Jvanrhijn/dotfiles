@@ -66,17 +66,17 @@ bindsym $mod+j focus down
 bindsym $mod+k focus up
 bindsym $mod+l focus right
 
-# alternatively, you can use the cursor keys:
-bindsym $mod+Left focus left
-bindsym $mod+Down focus down
-bindsym $mod+Up focus up
-bindsym $mod+Right focus right
+# resize
+bindsym $mod+Right resize shrink width 1 px or 1 ppt
+bindsym $mod+Up resize grow height 1 px or 1 ppt
+bindsym $mod+Down resize shrink height 1 px or 1 ppt
+bindsym $mod+Left resize grow width 1 px or 1 ppt
 
 # move focused window
-bindsym $mod+Shift+j move left
-bindsym $mod+Shift+k move down
-bindsym $mod+Shift+l move up
-bindsym $mod+Shift+semicolon move right
+bindsym $mod+Shift+h move left
+bindsym $mod+Shift+j move down
+bindsym $mod+Shift+k move up
+bindsym $mod+Shift+l move right
 
 # alternatively, you can use the cursor keys:
 bindsym $mod+Shift+Left move left
@@ -149,10 +149,10 @@ mode "resize" {
         # Pressing right will grow the window’s width.
         # Pressing up will shrink the window’s height.
         # Pressing down will grow the window’s height.
-        bindsym j resize shrink width 10 px or 10 ppt
-        bindsym k resize grow height 10 px or 10 ppt
-        bindsym l resize shrink height 10 px or 10 ppt
-        bindsym semicolon resize grow width 10 px or 10 ppt
+        bindsym h resize shrink width 10 px or 10 ppt
+        bindsym j resize grow height 10 px or 10 ppt
+        bindsym k resize shrink height 10 px or 10 ppt
+        bindsym l resize grow width 10 px or 10 ppt
 
         # same bindings, but for the arrow keys
         bindsym Left resize shrink width 10 px or 10 ppt
@@ -176,9 +176,9 @@ bindsym $mod+x exec rofi -show drun
 #} 
 #
 # Window Gaps and borders
-gaps outer 0
+gaps outer 4
 gaps inner 8
-for_window [class="^.*"] border pixel 0
+for_window [class="^.*"] border pixel 3
 smart_gaps on
 
 # Windows that should always float
@@ -190,18 +190,19 @@ for_window [class="Pavucontrol" instance="pavucontrol"] floating enable
 # it fails to get colors from Xresources.
 set_from_resource $fg i3wm.color7 #f0f0f0
 set_from_resource $bg i3wm.color2 #f0f0f0
+set_from_resource $bd i3wm.color0
+set_from_resource $bf i3wm.color5
+set_from_resource $bi i3wm.color12
+set_from_resource $bu i3wm.color3
 
 # class                 border  backgr. text indicator child_border
-client.focused          $bg     $bg     $fg  $bg       $bg
-client.focused_inactive $bg     $bg     $fg  $bg       $bg
-client.unfocused        $bg     $bg     $fg  $bg       $bg
-client.urgent           $bg     $bg     $fg  $bg       $bg
-client.placeholder      $bg     $bg     $fg  $bg       $bg
+client.focused          $bf     $bf     $fg  $bi       $bf
+client.focused_inactive $bd     $bd     $fg  $bi       $bd
+client.unfocused        $bd     $bd     $fg  $bi       $bd
+client.urgent           $bu     $bu     $fg  $bi       $bd
+client.placeholder      $bd     $bd     $fg  $bi       $bd
 
 client.background       $bg
-
-# Terminal window borders
-for_window [class="URxvt"] border pixel 0
 
 exec xrandr --dpi 100
 exec xrdb -merge $HOME/.Xresources
