@@ -3,10 +3,11 @@ call plug#begin('~/.local/share/nvim/plugged')
 Plug 'donRaphaco/neotex', { 'for': 'tex' }
 Plug 'dylanaraps/wal.vim'
 Plug 'zah/nim.vim'
+Plug 'rakr/vim-one'
 call plug#end()
 
-"colorscheme wal
-colorscheme molokai
+colorscheme one 
+set background=light
 
 " Spaces, not tabs!
 set tabstop=2

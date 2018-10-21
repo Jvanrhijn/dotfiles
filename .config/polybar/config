@@ -8,14 +8,12 @@
 ;=====================================================
 
 [colors]
-background = ${xrdb:color0:#222}
-;background = #000000
-background-alt = ${xrdb:color0:#222}
-;foreground = ${xrdb:color7:#222}
-foreground = #d0d0d0
-foreground-alt = #d0d0d0
-primary = #ffb52a
-secondary = #e60053
+background = ${xrdb:background:#222}
+background-alt = ${xrdb:background:#222}
+foreground = ${xrdb:foreground:#222}
+foreground-alt = ${xrdb:foreground:#222}
+primary = ${xrdb:background:#222}
+secondary = ${xrdb:background:#222}
 alert = #bd2c40
 
 [bar/laptop]
@@ -23,7 +21,7 @@ width = 100%
 height = 28
 radius = 0
 fixed-center = false
-bottom = true
+bottom = false 
 
 background = ${colors.background}
 foreground = ${colors.foreground}
@@ -31,10 +29,10 @@ foreground = ${colors.foreground}
 line-size = 3
 line-color = #f00
 
-border-bottom-size = 0
-border-left-size = 0
-border-right-size = 0
-border-top-size = 0
+border-bottom-size = 3
+border-left-size = 10
+border-right-size = 10
+border-top-size = 5
 border-size = 0
 border-color = #00000000
 

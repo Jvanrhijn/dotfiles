@@ -13,33 +13,23 @@ URxvt.keysym.C-slash:  font-size:show
 
 xterm*font:         xft:Inconsolata-15,xft:FuraMono\ Nerd\ Font\ Mono:pixelsize=15
 
+*foreground:    #383A42
+*background:   #F9F9F9
 
-*foreground:#CCCCCC
-*background:#1B1D1E
-URxvt*borderColor:#1B1D1E
-
-!black darkgray
-*color0:    #1B1D1E
-*color8:    #808080
-!darkred red
-*color1:    #FF0044
-*color9:    #F92672
-!darkgreen green
-*color2:    #82B414
-*color10:   #A6E22E
-!darkyellow yellow
-*color3:    #FD971F
-*color11:   #E6DB74
-!darkblue blue
-*color4:    #266C98
-*color12:   #7070F0
-!darkmagenta magenta
-*color5:    #AC0CB1
-*color13:   #D63AE1
-!darkcyan cyan
-*color6:    #AE81FF
-*color14:   #66D9EF
-!gray white
-*color7:    #CCCCCC
-*color15:   #F8F8F2
+*color0:        #000000
+*color1:        #E45649
+*color2:        #50A14F
+*color3:        #986801
+*color4:        #4078F2
+*color5:        #A626A4
+*color6:        #0184BC
+*color7:        #A0A1A7
+*color8:        #383A42
+*color9:        #E45649
+*color10:       #50A14F
+*color11:       #986801
+*color12:       #4078F2
+*color13:       #A626A4
+*color14:       #0184BC
+*color15:       #FFFFFF
 

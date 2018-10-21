@@ -33,6 +33,7 @@ alias copr='sudo dnf copr enable'
 alias insty='sudo dnf install -y'
 alias ipython='ipython3'
 alias matlab='matlab -softwareopengl -nodesktop -nosplash'
+alias bc='bc -l'
 
 
 # functions
@@ -56,6 +57,10 @@ ffsettheme() {
   sudo sed -i "s/^\(Exec=\)firefox %u/\1env GTK_THEME=$1 firefox %u/" $(locate firefox.desktop)
 }
 
+cl() {
+  cd $1 && ls
+}
+
 # prompt 
 PROMPT="[%n@%m %d]%(!.#.$) "
 
@@ -63,13 +68,13 @@ PROMPT="[%n@%m %d]%(!.#.$) "
 eval $(thefuck --alias)
 
 # Forcibly load colorscheme from script
-sh $HOME/.config/molokai.sh
+#sh $HOME/.config/molokai.sh
 
 # PATH
 PATH=$PATH:$HOME/opt/gcc-arm-none-eabi-7-2017-q4-major/bin:$HOME/.local/bin
 
 # source
-#source /opt/intel/parallel_studio_xe_2018/compilers_and_libraries_2018/linux/bin/ifortvars.sh intel64
+source /opt/intel/parallel_studio_xe_2018/compilers_and_libraries_2018/linux/bin/compilervars_global.sh intel64
 
 # JDK
 export JAVA_HOME=/usr/lib/jvm/java-10-openjdk

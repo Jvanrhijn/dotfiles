@@ -172,10 +172,10 @@ bindsym $mod+x exec rofi -show drun
 #} 
 #
 # Window Gaps and borders
-gaps outer 0
+gaps outer 2
 gaps inner 10
 for_window [class="^.*"] border pixel 3
-smart_gaps on
+#smart_gaps off
 
 # Terminal window borders
 for_window [class="URxvt"] border pixel 0
@@ -188,9 +188,9 @@ for_window [class="Nemo" instance="nemo"] floating enable
 # it fails to get colors from Xresources.
 set_from_resource $fg i3wm.color7 #f0f0f0
 set_from_resource $bg i3wm.color2 #f0f0f0
-set_from_resource $bd i3wm.color0
-set_from_resource $bf i3wm.color5
-set_from_resource $bi i3wm.color12
+set_from_resource $bd i3wm.color15 # inactive border
+set_from_resource $bf i3wm.color7 # focused border
+set_from_resource $bi i3wm.color3 # indicator
 set_from_resource $bu i3wm.color3
 
 # class                 border  backgr. text indicator child_border
@@ -206,7 +206,7 @@ exec xrandr --dpi 100
 exec xrdb -merge $HOME/.Xresources
 exec sh $HOME/.config/molokai.sh
 #exec feh --no-fehbg --bg-fill "$(find "${HOME}/Dropbox/Wallpapers" -type f | sort -R | tail -1)"
-exec feh --bg-fill $HOME/Dropbox/Wallpapers/solar.png
+exec feh --bg-fill $HOME/Dropbox/Wallpapers/paperplane.jpg
 exec --no-startup-id dropbox &
 exec --no-startup-id polybar laptop &
 exec --no-startup-id nm-applet & 
