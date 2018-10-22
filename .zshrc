@@ -33,7 +33,7 @@ PROMPT="[%n@%m %d]%(!.#.$) "
 xrdb -merge ~/.Xresources
 
 # Forcibly load colorscheme from script
-sh $HOME/.config/molokai.sh
+#sh $HOME/.config/molokai.sh
 
 # fuck
 eval $(thefuck --alias)

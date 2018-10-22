@@ -5,7 +5,8 @@ Plug 'dylanaraps/wal.vim'
 call plug#end()
 
 "colorscheme wal
-colorscheme molokai
+colorscheme one 
+set background=light
 let g:impact_transbg=1
 
 " Spaces, not tabs!

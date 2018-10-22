@@ -179,7 +179,7 @@ bindsym $mod+x exec rofi -show drun
 gaps outer 4
 gaps inner 8
 for_window [class="^.*"] border pixel 3
-smart_gaps on
+#smart_gaps on
 
 # Windows that should always float
 for_window [class="Matplotlib" instance="matplotlib"] floating enable
@@ -190,9 +190,9 @@ for_window [class="Pavucontrol" instance="pavucontrol"] floating enable
 # it fails to get colors from Xresources.
 set_from_resource $fg i3wm.color7 #f0f0f0
 set_from_resource $bg i3wm.color2 #f0f0f0
-set_from_resource $bd i3wm.color0
-set_from_resource $bf i3wm.color5
-set_from_resource $bi i3wm.color12
+set_from_resource $bd i3wm.color15 # border inactive
+set_from_resource $bf i3wm.color7 # border focused
+set_from_resource $bi i3wm.color12 # border indicator
 set_from_resource $bu i3wm.color3
 
 # class                 border  backgr. text indicator child_border

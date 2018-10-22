@@ -8,13 +8,12 @@
 ;=====================================================
 
 [colors]
-background = ${xrdb:color0:#222}
-background-alt = ${xrdb:color0:#222}
-;foreground = ${xrdb:color7:#222}
-foreground = #d0d0d0
-foreground-alt = #d0d0d0
-primary = #ffb52a
-secondary = #e60053
+background = ${xrdb:background:#222}
+background-alt = ${xrdb:background:#222}
+foreground = ${xrdb:foreground:#222}
+foreground-alt = ${xrdb:foreground:#222}
+primary = ${xrdb:background:#222}
+secondary = ${xrdb:color0:#222}
 alert = #bd2c40
 
 [bar/desktop]
@@ -33,10 +32,10 @@ foreground = ${colors.foreground}
 line-size = 3
 line-color = #f00
 
-border-bottom-size = 5
-border-left-size = 10
-border-right-size = 10
-border-top-size = 5
+border-bottom-size = 8
+border-left-size = 12
+border-right-size = 12
+border-top-size = 0
 border-size = 0
 border-color = #00000000
 
