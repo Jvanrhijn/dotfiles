@@ -31,5 +31,5 @@ xterm*font:         xft:Inconsolata-15,xft:FuraMono\ Nerd\ Font\ Mono:pixelsize=
 *color12:       #4078F2
 *color13:       #A626A4
 *color14:       #0184BC
-*color15:       #FFFFFF
+*color15:       #F9F9F9
 

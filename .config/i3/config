@@ -187,11 +187,11 @@ for_window [class="Nemo" instance="nemo"] floating enable
 # NOTE: The '#f0f0f0' in the lines below is the color i3 will use if
 # it fails to get colors from Xresources.
 set_from_resource $fg i3wm.color7 #f0f0f0
-set_from_resource $bg i3wm.color2 #f0f0f0
-set_from_resource $bd i3wm.color15 # inactive border
-set_from_resource $bf i3wm.color7 # focused border
-set_from_resource $bi i3wm.color3 # indicator
-set_from_resource $bu i3wm.color3
+set_from_resource $bg i3wm.color15 #f0f0f0
+set_from_resource $bd i3wm.color4 # inactive border
+set_from_resource $bf i3wm.color9 # 7 focused border
+set_from_resource $bi i3wm.color4 # indicator
+set_from_resource $bu i3wm.color15
 
 # class                 border  backgr. text indicator child_border
 client.focused          $bf     $bf     $fg  $bi       $bf
@@ -206,7 +206,7 @@ exec xrandr --dpi 100
 exec xrdb -merge $HOME/.Xresources
 exec sh $HOME/.config/molokai.sh
 #exec feh --no-fehbg --bg-fill "$(find "${HOME}/Dropbox/Wallpapers" -type f | sort -R | tail -1)"
-exec feh --bg-fill $HOME/Dropbox/Wallpapers/paperplane.jpg
+exec feh --bg-fill $HOME/Dropbox/Wallpapers/everest_light.png
 exec --no-startup-id dropbox &
 exec --no-startup-id polybar laptop &
 exec --no-startup-id nm-applet & 
