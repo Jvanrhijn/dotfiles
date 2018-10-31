@@ -211,4 +211,5 @@ exec --no-startup-id dropbox &
 exec --no-startup-id polybar laptop &
 exec --no-startup-id nm-applet & 
 exec /usr/bin/compton --config ~/.config/compton/compton.conf -b -c --opengl
+exec ibus-daemon --xim
 exec xbindkeys

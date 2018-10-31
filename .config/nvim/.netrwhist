@@ -1,6 +1,9 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =4
+let g:netrw_dirhist_cnt =7
 let g:netrw_dirhist_1='/home/jesse/git/pie-cpp-untitled/src'
 let g:netrw_dirhist_2='/home/jesse/git/pie-cpp-untitled'
 let g:netrw_dirhist_3='/home/jesse/git/pie-cpp-untitled/cmake-build-debug/tests'
 let g:netrw_dirhist_4='/opt/intel/compilers_and_libraries_2018.0.128/linux/bin'
+let g:netrw_dirhist_5='/home/jesse/git/Mole'
+let g:netrw_dirhist_6='/home/jesse/git'
+let g:netrw_dirhist_7='/home/jesse/git/Mole'

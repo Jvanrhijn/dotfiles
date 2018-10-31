@@ -34,6 +34,7 @@ alias insty='sudo dnf install -y'
 alias ipython='ipython3'
 alias matlab='matlab -softwareopengl -nodesktop -nosplash'
 alias bc='bc -l'
+alias tmp='cd /tmp'
 
 
 # functions
@@ -89,3 +90,6 @@ source ~/.config/zsh-autosuggestions/zsh-autosuggestions.zsh
 # C/CXX compilers
 export CC=/usr/bin/clang
 export CXX=/usr/bin/clang++
+
+# Fix for IntelliJ IDEs and dead keys
+export XMODIFIERS=""
