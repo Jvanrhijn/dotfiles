@@ -4,7 +4,24 @@ Plug 'donRaphaco/neotex', { 'for': 'tex' }
 Plug 'dylanaraps/wal.vim'
 Plug 'zah/nim.vim'
 Plug 'rakr/vim-one'
+Plug 'udalov/kotlin-vim'
+if has('nvim')
+  Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+else
+  Plug 'Shougo/deoplete.nvim'
+  Plug 'roxma/nvim-yarp'
+  Plug 'roxma/vim-hug-neovim-rpc'
+endif
+Plug 'SirVer/ultisnips'
+Plug 'honza/vim-snippets'
 call plug#end()
+
+let g:deoplete#enable_at_startup = 1
+let g:UltiSnipsExpandTrigger="<tab>"
+let g:UltiSnipsJumpForwardTrigger="<c-b>"
+let g:UltiSnipsJumpBackwardTrigger="<c-z>"
+
+let g:UltiSnipsEditSplit="vertical"
 
 colorscheme one 
 set background=light
