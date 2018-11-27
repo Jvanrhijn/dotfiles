@@ -43,15 +43,15 @@ texed() {
 }
 
 duplscr() {
-    xrandr --output "$1" --same-as DP-1
+    xrandr --output "$1" --same-as eDP1
 }
 
 rightscr() {
-    xrandr --output "$1" --right-of DP-1
+    xrandr --output "$1" --right-of eDP1
 }
 
 leftscr() {
-    xrandr --output "$1" --left-of DP-1
+    xrandr --output "$1" --left-of eDP1
 }
 
 ffsettheme() {
