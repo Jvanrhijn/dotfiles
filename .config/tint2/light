@@ -1,0 +1,4 @@
+#!/bin/bash
+
+IFS=. read -r int fraction <<< "$(light)"
+echo  $int
