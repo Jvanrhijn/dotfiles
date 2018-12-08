@@ -60,3 +60,6 @@ source $HOME/.config/zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 # Intel MKL libraries
 source /opt/intel/compilers_and_libraries_2018.0.128/linux/mkl/bin/mklvars.sh intel64
 
+# Standard compilers
+export CC=/usr/bin/clang
+export CXX=/usr/bin/clang++

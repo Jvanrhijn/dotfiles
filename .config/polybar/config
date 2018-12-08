@@ -15,16 +15,16 @@ foreground-alt = ${xrdb:foreground:#222}
 primary = ${xrdb:background:#222}
 secondary = ${xrdb:color0:#222}
 alert = #bd2c40
+custom_background_dark 	= ${xrdb:background:#222}
+custom_background_light = ${xrdb:foreground:#222}
+
 
 [bar/desktop]
-;monitor = ${env:MONITOR:HDMI-1}
 width = 100%
 height = 27
-;offset-x = 1%
-;offset-y = 1%
 radius = 0
 fixed-center = false
-bottom = true
+bottom = false
 
 background = ${colors.background}
 foreground = ${colors.foreground}
@@ -32,10 +32,10 @@ foreground = ${colors.foreground}
 line-size = 3
 line-color = #f00
 
-border-bottom-size = 8
+border-bottom-size = 0
 border-left-size = 12
 border-right-size = 12
-border-top-size = 0
+border-top-size = 8
 border-size = 0
 border-color = #00000000
 
@@ -52,27 +52,35 @@ font-3 = Noto Sans Symbols2:pixelsize=11;1
 font-4 = Weather Icons:pixelsize=10;1
 
 modules-left = i3 dropbox volume mpd
-modules-center = none
+#modules-center = none
 modules-right = spotify weather cpu memory xkeyboard time date powermenu
 
 tray-position = none
 tray-padding = 2
-;tray-transparent = true
-;tray-background = #0063ff
-
-;wm-restack = bspwm
-;wm-restack = i3
-
-;override-redirect = true
-
-;scroll-up = bspwm-desknext
-;scroll-down = bspwm-deskprev
-
-;scroll-up = i3wm-wsnext
-;scroll-down = i3wm-wsprev
 
 cursor-click = pointer
 cursor-scroll = ns-resize
+
+[module/divider]
+type = custom/text
+
+content            = "  |  "
+content-foreground = ${colors.custom_background_light}
+content-background = ${colors.custom_background_dark}
+
+[module/left_end]
+type = custom/text
+
+content            = "   -----[   "
+content-foreground = ${colors.custom_background_light}
+content-background = ${colors.custom_background_dark}
+
+[module/right_end]
+type = custom/text
+
+content            = "   ]-----   "
+content-foreground = ${colors.custom_background_light}
+content-background = ${colors.custom_background_dark}
 
 [module/xwindow]
 type = internal/xwindow
