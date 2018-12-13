@@ -33,13 +33,5 @@ fi
 echo "${TOTAL}" > "${cpuFile}"
 echo "${IDLE}" >> "${cpuFile}"
 
-# get cpu temperatures
-temps=$(sensors | grep Core | grep -Po '\+.+C\s' | sed 's/[\+C]//')
-temps=${temps//°C}
 
-array=($temps)
-arraylen=${#array[@]}
-sum=$(dc <<< '[+]sa[z2!>az2!>b]sb'"${array[*]}lbxp")
-average=$(echo "$sum / $arraylen" | bc) 
-
-echo " $DIFF_USAGE% $average°C"
+echo " $DIFF_USAGE%"

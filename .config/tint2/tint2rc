@@ -111,7 +111,7 @@ border_color_pressed = #eaeaea 44
 
 #-------------------------------------
 # Panel
-panel_items = TEEECS
+panel_items = LTEEEECS
 panel_size = 100% 34
 panel_margin = 0 2
 panel_padding = 2 0 8
@@ -282,6 +282,27 @@ execp_icon_w = 0
 execp_icon_h = 0
 
 # Executor 3
+execp = new
+execp_command = $HOME/.config/tint2/temps.sh
+execp_interval = 1
+execp_has_icon = 0
+execp_cache_icon = 1
+execp_continuous = 0
+execp_markup = 1
+execp_lclick_command = 
+execp_rclick_command = 
+execp_mclick_command = 
+execp_uwheel_command = 
+execp_dwheel_command = 
+execp_font = Monaco Sans 9
+execp_font_color = #ffffff 100
+execp_padding = 4 0
+execp_background_id = 5
+execp_centered = 0
+execp_icon_w = 0
+execp_icon_h = 0
+
+# Executor 4
 execp = new
 execp_command = $HOME/.config/tint2/weather
 execp_interval = 1800
