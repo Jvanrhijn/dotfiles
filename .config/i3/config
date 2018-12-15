@@ -212,6 +212,7 @@ exec sh $HOME/.config/molokai.sh
 #exec --no-startup-id polybar desktop &
 exec --no-startup-id tint2 
 exec /usr/bin/compton --config ~/.config/compton/compton.conf -b --opengl
+exec --no-startup-id conky -c $HOME/.config/conky/conkyrc
 exec xbindkeys
 exec --no-startup-id /usr/lib/gnome-settings-daemon/gsd-xsettings
 exec_always --no-startup-id gnome-power-manager

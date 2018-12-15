@@ -34,4 +34,4 @@ echo "${TOTAL}" > "${cpuFile}"
 echo "${IDLE}" >> "${cpuFile}"
 
 
-echo " $DIFF_USAGE%"
+echo "$DIFF_USAGE%"
