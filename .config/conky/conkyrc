@@ -68,4 +68,13 @@ ${font FontAwesome}${font}   cpu ${alignr}${execi 1 ~/.config/conky/cpustat.s
 ${voffset 1}
 ${color3}${cpugraph cpu1 50,133 5e7b7b d8deeb -t} ${cpugraph cpu2 50,133 5e7b7b d8deeb -t}
 ${cpugraph cpu3 50,133 5e7b7b d8deeb -t} ${cpugraph cpu4 50,133 5e7b7b d8deeb -t}
+${voffset 1}
+#-- conky-spotify setup
+${if_running spotify}${voffset 0}${color green}Spotify (${exec ~/.config/conky/conky-spotify/scripts/status.sh}) $hr $color
+# --- Get Spotify Cover ---
+# --- added -n (no caching) flag to image as found it was caching it, as it was not updating the cover for me correcty. Also, size and location of the image placement is specific to my setup, so tinker with that yourself ---
+${exec ~/.conky/conky-spotify/scripts/cover.sh}${image ~/.config/conky/conky-spotify/current/current.jpg -p 0,587 -s 60x60 -n}
+${offset 70}Title: ${exec ~/.config/conky/conky-spotify/scripts/title.sh}
+${offset 70}Artist: ${exec ~/.config/conky/conky-spotify/scripts/artist.sh}
+${offset 70}Album: ${exec ~/.config/conky/conky-spotify/scripts/album.sh}${voffset 10}${endif}
 ]]
