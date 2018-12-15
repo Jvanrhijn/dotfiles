@@ -58,9 +58,9 @@ ${hr}
 ${font FontAwesome}${font} ${alignr}${exec curl ipinfo.io/ip}
 
 ${hr}
-${font FontAwesome} ${font}   /home ${alignr}  ${fs_bar 12 /home} 
+${font FontAwesome} ${font}   /home ${fs_size /home} ${alignr}${fs_bar 12,120 /home}
 ${voffset 1}
-${font FontAwesome} ${font}   root ${alignr}${fs_bar 12 /}
+${font FontAwesome} ${font}   root ${fs_size /} ${alignr}${fs_bar 12,120 /}
 ${voffset 1}
 ${font FontAwesome} ${font}   gpu ${alignr}${execi 1 ~/.config/conky/gputemp.sh}
 ${voffset 1}
