@@ -42,7 +42,7 @@ conky.config = {
 	net_avg_samples = 2,
 	override_utf8_locale= true,
 
-	font= 'Ubuntu:style=medium:size=9'
+  font= 'Monaco:style=medium:size=9'
 }
 
 conky.text = [[
@@ -56,25 +56,23 @@ ${voffset 40}
 ${font FontAwesome}${font} ${alignr}${addrs enp5s0}
 ${hr}
 ${font FontAwesome}${font} ${alignr}${exec curl ipinfo.io/ip}
-
 ${hr}
-${font FontAwesome} ${font}   /home ${fs_size /home} ${alignr}${fs_bar 12,120 /home}
 ${voffset 1}
-${font FontAwesome} ${font}   root ${fs_size /} ${alignr}${fs_bar 12,120 /}
+${font FontAwesome} ${font}   home ${alignr}${fs_bar 12,120 /home} ${fs_size /home}
+${voffset 1}
+${font FontAwesome} ${font}   root ${alignr}${fs_bar 12,120 /} ${fs_size /}
+${voffset 1}
+${font FontAwesome} ${font}   ram  ${alignr} ${mem} / ${memmax} 
+${voffset 1}
+${memgraph 50, 266 5e7b7b d8deeb -t}}
 ${voffset 1}
 ${font FontAwesome} ${font}   gpu ${alignr}${execi 1 ~/.config/conky/gputemp.sh}
 ${voffset 1}
-${font FontAwesome}${font}   cpu ${alignr}${execi 1 ~/.config/conky/cpustat.sh} @ ${execi 1 ~/.config/conky/cputemp.sh}
+${font FontAwesome}${font}   cpu ${execi 1 ~/.config/conky/cpustat.sh}  ${alignr}${execi 1 ~/.config/conky/cputemp.sh}
 ${voffset 1}
-${color3}${cpugraph cpu1 50,133 5e7b7b d8deeb -t} ${cpugraph cpu2 50,133 5e7b7b d8deeb -t}
+${cpugraph cpu1 50,133 5e7b7b d8deeb -t} ${cpugraph cpu2 50,133 5e7b7b d8deeb -t}
 ${cpugraph cpu3 50,133 5e7b7b d8deeb -t} ${cpugraph cpu4 50,133 5e7b7b d8deeb -t}
 ${voffset 1}
 #-- conky-spotify setup
-${if_running spotify}${voffset 0}${color green}Spotify (${exec ~/.config/conky/conky-spotify/scripts/status.sh}) $hr $color
-# --- Get Spotify Cover ---
-# --- added -n (no caching) flag to image as found it was caching it, as it was not updating the cover for me correcty. Also, size and location of the image placement is specific to my setup, so tinker with that yourself ---
-${exec ~/.conky/conky-spotify/scripts/cover.sh}${image ~/.config/conky/conky-spotify/current/current.jpg -p 0,587 -s 60x60 -n}
-${offset 70}Title: ${exec ~/.config/conky/conky-spotify/scripts/title.sh}
-${offset 70}Artist: ${exec ~/.config/conky/conky-spotify/scripts/artist.sh}
-${offset 70}Album: ${exec ~/.config/conky/conky-spotify/scripts/album.sh}${voffset 10}${endif}
+${font FontAwesome} ${font} ${execi 1 python ~/.config/tint2/spotify_status.py -p ','}
 ]]
