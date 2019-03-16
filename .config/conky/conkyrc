@@ -68,7 +68,7 @@ ${memgraph 50, 266 5e7b7b d8deeb -t}}
 ${voffset 1}
 ${font FontAwesome} ${font}   gpu ${alignr}${execi 1 ~/.config/conky/gputemp.sh}
 ${voffset 1}
-${font FontAwesome}${font} cpu  ${alignr} core0 ${freq_g cpu0} GHz ${execi 1 ~/.config/conky/cputemp.sh 0}
+${font FontAwesome}${font}   cpu  ${alignr} core0 ${freq_g cpu0} GHz ${execi 1 ~/.config/conky/cputemp.sh 0}
 ${alignr} core1 ${freq_g cpu1} GHz ${execi 1 ~/.config/conky/cputemp.sh 1}
 ${alignr} core2 ${freq_g cpu2} GHz ${execi 1 ~/.config/conky/cputemp.sh 2}
 ${alignr} core3 ${freq_g cpu3} GHz ${execi 1 ~/.config/conky/cputemp.sh 3}

@@ -1,6 +1,7 @@
 
 " Plugings
 call plug#begin('~/.local/share/nvim/plugged')
+Plug 'ron-rs/ron.vim'
 Plug 'donRaphaco/neotex', { 'for': 'tex' }
 Plug 'dylanaraps/wal.vim'
 if has('nvim')
